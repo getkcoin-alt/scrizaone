@@ -1,0 +1,8 @@
+period_start,period_end,market,service,metric,value,source,coverage_limit,human_owner
+,,,ALL,interaction,,consented_analytics,unknown,
+,,,ALL,message_composition,,consented_analytics,not_delivery,
+,,,ALL,provider_acceptance,,provider_receipt,not_inbox_delivery,
+,,,ALL,observed_delivery,,authorized_delivery_evidence,unknown,
+,,,ALL,human_qualified_enquiry,,private_sales_record,unknown,
+,,,ALL,opportunity,,private_sales_record,unknown,
+,,,ALL,closed_revenue,,private_sales_record,unknown,

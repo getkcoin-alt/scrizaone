@@ -1,0 +1,4 @@
+import Shell from '@/components/Shell';
+import DemoLab from '@/components/buyer/DemoLab';
+export const metadata={title:'Working Software Demos — Payments, Requests & Organic Growth',description:'Try payment status and reconciliation, service request handling, and an editorial acquisition workflow using synthetic data. Explore failures before planning a project.',alternates:{canonical:'/demos'}};
+export default function Demos(){return <Shell><section className="hero hero-sm"><div className="wrap"><p className="eyebrow">They ask. They try. They decide.</p><h1>See the workflow.<br/>Try the difficult part.</h1><p className="lede">Three small, working demonstrations. Change a state, introduce a failure, and see the operational consequence before discussing your own system.</p></div></section><section className="section"><div className="wrap"><DemoLab/></div></section></Shell>}

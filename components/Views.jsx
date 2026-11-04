@@ -1,3 +1,4 @@
+import DecisionPath from './growth/DecisionPath';
 import Link from "next/link";
 import { company, services } from "@/lib/site";
 import { locales } from "@/lib/locales";
@@ -67,14 +68,14 @@ export function HomeView({ locale }) {
         <div className="wrap hero-layout">
           <div className="hero-copy">
           <p className="eyebrow">Software engineering partner · {l.name}</p>
-          <h1><span>Fintech, AI</span> and custom software engineering for companies {where}</h1>
+          <h1>{locale === "global" ? <>Turn your business idea into <span>software you can see, understand, and plan.</span></> : <><span>Fintech, AI</span> and custom software engineering for companies {where}</>}</h1>
           <p className="lede">
             ScrizaOne is the international team of {company.legalName}. We build payment integrations and payments platforms,
             AI agents and automation, and custom software and SaaS, with working hours that overlap yours.
           </p>
           <div className="cta-row">
-            <Link className="btn" href="/contact">Book a free discovery call</Link>
-            <Link className="btn btn-ghost" href={p(locale, "/services/fintech")}>Fintech engineering</Link>
+            <Link className="btn" href="/demos">Explore a working demo</Link>
+            <Link className="btn btn-ghost" href="/tools/payment-readiness">Plan my project</Link>
           </div>
           <p className="small muted">{l.overlap}</p>
           </div>
@@ -100,6 +101,7 @@ export function HomeView({ locale }) {
         </div>
       </section>
 
+      <section className="section buyer-intro"><div className="wrap"><p className="eyebrow">They ask. They try. They decide.</p><h2>Make the decision before the commitment.</h2><div className="grid-3"><Link className="card link-card" href="/resources"><span className="buyer-index">01 / Ask</span><h3>Get a direct answer.</h3><p>Costs, risks, alternatives and responsibilities — including when custom software is the wrong choice.</p><span className="more">Explore buyer answers →</span></Link><Link className="card link-card" href="/demos"><span className="buyer-index">02 / Try</span><h3>Test a small workflow.</h3><p>Try payments, a service request or an editorial journey. Introduce a failure and inspect the consequence.</p><span className="more">Open the demo lab →</span></Link><Link className="card link-card" href="/tools/payment-readiness"><span className="buyer-index">03 / Decide</span><h3>Write a useful brief.</h3><p>Compare buy, improve, build or postpone. Edit and download your plan without an email gate.</p><span className="more">Plan my project →</span></Link></div><p className="mt-s"><Link href="/services/organic-growth">Need organic acquisition planning? Review the scope and dependencies →</Link></p></div></section>
       <RegionPanel locale={locale} />
 
       <section className="section trust-section" aria-labelledby="trust-h">
@@ -117,7 +119,7 @@ export function HomeView({ locale }) {
             </div>
             <div className="card flat">
               <h3>Products we run ourselves</h3>
-              <p>ScrizaPay (bill payments), HRVico (HRMS), Edu2All (school ERP) and Hostelo. These serve the Indian market today and show how we operate software long-term.</p>
+              <p>ScrizaPay (bill payments), HRVico (HRMS) and Hostelo. These serve the Indian market today and show how we operate software long-term.</p>
             </div>
           </div>
         </div>
@@ -187,7 +189,7 @@ export function ServiceView({ locale, slug }) {
         </div>
       </section>
 
-      <section className="section alt"><div className="wrap"><h2>Related engineering resources</h2><ul>{guides.filter(g => g.service === slug || g.slug === 'payment-events-and-reconciliation').map(g => <li key={g.slug}><Link href={`/resources/${g.slug}`}>{g.title}</Link></li>)}</ul><Link className="more" href="/research">Research local payment infrastructure →</Link></div></section>
+      <section className="section alt"><div className="wrap"><DecisionPath service={slug}/><h2>Related engineering resources</h2><ul>{guides.filter(g => g.service === slug || g.slug === 'payment-events-and-reconciliation').map(g => <li key={g.slug}><Link href={`/resources/${g.slug}`}>{g.title}</Link></li>)}</ul><Link className="more" href="/research">Research local payment infrastructure →</Link></div></section>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({'@context':'https://schema.org','@type':'Service',name:s.title,description:s.description,url:SITE_URL+p(locale, `/services/${slug}`),provider:{'@id':'https://www.scriza.in/#organization'},serviceType:s.title})}} />
       <CtaBand />
     </>

@@ -1,0 +1,4 @@
+import Shell from '@/components/Shell';
+import ProjectEconomics from '@/components/growth/ProjectEconomics';
+export const metadata={title:'Software Cost & Automation ROI Scenario Calculator',description:'Model software delivery costs, monthly running costs and potential automation capacity with your own assumptions. Transparent formulas, free export, no signup.',alternates:{canonical:'/tools/project-economics'}};
+export default function Page(){return <Shell><section className="hero hero-sm"><div className="wrap"><p className="eyebrow">Open planning tool / No signup</p><h1>Make the economics<br/>part of the conversation.</h1><p className="lede">Before asking what software costs, test what the first useful workflow could be worth. Edit the inputs. Inspect the formulas. Take the assumptions with you.</p></div></section><section className="section"><div className="wrap"><ProjectEconomics/></div></section></Shell>}

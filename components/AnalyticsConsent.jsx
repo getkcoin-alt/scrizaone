@@ -3,6 +3,7 @@ import { useEffect, useState, Suspense } from 'react';
 import { usePathname } from 'next/navigation';
 import Script from 'next/script';
 import Link from 'next/link';
+import {referralGroup} from '@/lib/growth/guidance.mjs';
 import { recordEvent } from '@/lib/measurement';
 function AnalyticsRuntime({id}) {
  const pathname=usePathname();const [consent,setConsent]=useState(null);
@@ -15,7 +16,7 @@ function AnalyticsRuntime({id}) {
   const location=window.location.origin+pathname;
   window.gtag('js',new Date());
   window.gtag('config',id,{send_page_view:false,allow_google_signals:false,allow_ad_personalization_signals:false,page_location:location,page_referrer:referrer});
-  let source='direct_or_unattributed';try{const h=new URL(document.referrer).hostname;if(/(^|\.)(chatgpt\.com|claude\.ai|perplexity\.ai|gemini\.google\.com|copilot\.microsoft\.com)$/.test(h))source='observed_ai_referral';else if(/(^|\.)(google\.[a-z.]+|bing\.com|duckduckgo\.com)$/.test(h))source='search_referral';else if(h!==window.location.hostname)source='other_referral';else source='internal'}catch{}
+  const group=referralGroup(document.referrer,window.location.origin);const source={unknown:'direct_or_unattributed',search:'search_referral',ai_referral:'observed_ai_referral',other_referral:'other_referral',internal:'internal'}[group];
   window.gtag('event','page_view',{page_location:location,page_path:pathname,page_referrer:referrer,source_group:source});
  },[consent,id,pathname]);
  useEffect(()=>{const track=e=>{const a=e.target.closest?.('a');if(!a)return;const href=a.getAttribute('href')||'';let channel=href.startsWith('mailto:')?'email':href.startsWith('tel:')?'phone':href.startsWith('https://wa.me/')?'whatsapp':href==='/contact'?'contact_page':null;if(channel)recordEvent('contact_intent',{channel})};document.addEventListener('click',track);return()=>document.removeEventListener('click',track)},[]);

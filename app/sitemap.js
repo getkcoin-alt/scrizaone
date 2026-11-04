@@ -1,3 +1,5 @@
+import { publishedArticles } from "@/lib/growth/articles.mjs";
+export const dynamic = "force-dynamic";
 import { SITE_URL } from "@/lib/site";
 import { alternatesFor, localeList } from "@/lib/locales";
 import { guides, guideDate } from "@/lib/guides";
@@ -29,6 +31,7 @@ export default function sitemap() {
   }
   entries.push({ url: abs("/working-with-us"), lastModified: now, changeFrequency: "monthly", priority: 0.7 });
   entries.push({ url: abs("/contact"), lastModified: now, changeFrequency: "yearly", priority: 0.6 });
-  for (const path of ["/research", "/resources", "/tools/payment-readiness", "/company", "/privacy", ...guides.map(g => `/resources/${g.slug}`)]) { entries.push({url:abs(path),lastModified:new Date(guideDate),changeFrequency:"monthly",priority:0.7}); }
+  for (const path of ["/journal", "/tools/project-economics", "/demos", "/services/organic-growth", "/research", "/resources", "/tools/payment-readiness", "/company", "/privacy", ...guides.map(g => `/resources/${g.slug}`)]) { entries.push({url:abs(path),lastModified:new Date(guideDate),changeFrequency:"monthly",priority:0.7}); }
+  for (const a of publishedArticles()) entries.push({url:abs("/journal/"+a.slug),lastModified:new Date(a.publishAt),changeFrequency:"monthly",priority:0.7});
   return entries;
 }

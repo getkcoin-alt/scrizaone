@@ -5,6 +5,7 @@ const nextConfig = {
   trailingSlash: false,
   async headers() {
     return [
+      {source:"/meeting-prep",headers:[{key:"X-Robots-Tag",value:"noindex, nofollow, noarchive"},{key:"Cache-Control",value:"private, no-store"}]},
       {
         source: "/:path*",
         headers: [

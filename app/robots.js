@@ -9,8 +9,8 @@ export default function robots() {
   ];
   return {
     rules: [
-      { userAgent: "*", allow: "/", disallow: "/api/" },
-      ...agents.map((userAgent) => ({ userAgent, allow: "/", disallow: "/api/" })),
+      { userAgent: "*", allow: "/", disallow: ["/api/", "/meeting-prep"] },
+      ...agents.map((userAgent) => ({ userAgent, allow: "/", disallow: ["/api/", "/meeting-prep"] })),
     ],
     sitemap: `${SITE_URL}/sitemap.xml`,
     host: SITE_URL,

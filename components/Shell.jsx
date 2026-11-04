@@ -25,7 +25,7 @@ export default function Shell({ locale = "global", children }) {
               {services.map((s) => (
                 <li key={s.slug}><Link href={href(locale, `/services/${s.slug}`)}>{s.nav}</Link></li>
               ))}
-              <li><Link href="/resources">Resources</Link></li>
+              <li><Link href="/demos">Demos</Link></li><li><Link href="/resources">Resources</Link></li>
               <li><Link href="/working-with-us">Working with us</Link></li>
               <li><Link href="/contact" className="btn btn-sm">Contact</Link></li>
             </ul>
@@ -34,7 +34,7 @@ export default function Shell({ locale = "global", children }) {
             <summary aria-label="Open navigation"><span /><span /></summary>
             <nav aria-label="Mobile">
               {services.map((s) => <Link key={s.slug} href={href(locale, `/services/${s.slug}`)}>{s.nav}<span aria-hidden="true">↗</span></Link>)}
-              <Link href="/resources">Resources<span aria-hidden="true">↗</span></Link>
+              <Link href="/demos">Demos<span aria-hidden="true">↗</span></Link><Link href="/tools/payment-readiness">Plan my project<span aria-hidden="true">↗</span></Link><Link href="/resources">Resources<span aria-hidden="true">↗</span></Link>
               <Link href="/research">Market research<span aria-hidden="true">↗</span></Link>
               <Link href="/working-with-us">Working with us<span aria-hidden="true">↗</span></Link>
               <Link href="/contact">Contact<span aria-hidden="true">↗</span></Link>
@@ -55,7 +55,7 @@ export default function Shell({ locale = "global", children }) {
               CIN {company.cin} · DGFT IEC {company.iec}<br />
               {company.iso.map((i) => i.standard).join(" and ")} certified (scope: {company.isoScope}).
             </p>
-            <div className="footer-resources"><Link href="/resources">Engineering resources</Link><Link href="/research">Market research</Link><Link href="/tools/payment-readiness">Payment integration planner</Link><Link href="/company">Company & evidence</Link><Link href="/privacy">Privacy & analytics</Link></div>
+            <div className="footer-resources"><Link href="/journal">Market field notes</Link><Link href="/tools/project-economics">Project economics</Link><Link href="/demos">Working demos</Link><Link href="/tools/payment-readiness">Project workspace</Link><Link href="/services/organic-growth">Organic growth scope</Link><Link href="/resources">Engineering resources</Link><Link href="/research">Market research</Link><Link href="/tools/payment-readiness">Payment integration planner</Link><Link href="/company">Company & evidence</Link><Link href="/privacy">Privacy & analytics</Link></div>
           </div>
           <div>
             <p className="footer-h">Regions</p>
