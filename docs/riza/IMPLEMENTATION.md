@@ -4,7 +4,7 @@
 
 The approved cyan avatar launches a lazy-loaded chat on every page. Riza is visibly identified as AI. It asks context-specific discovery questions using only the site's published company/service facts. No tools or email/calendar credentials are available to the model.
 
-The visitor reviews and edits their contact details, business/country, service, requirements, timeline, optional budget, exact preferred local date/time and IANA time zone. Chat inclusion is optional. Explicit consent and a review step precede email submission. Resend acceptance is the only condition for the success screen. The existing mailto contact form remains working.
+The visitor reviews and edits their contact details, business/country, service, requirements, timeline, optional budget, exact preferred local date/time and IANA time zone. Chat inclusion is optional. Explicit consent and a review step precede email submission. Resend acceptance is the only condition for the success screen. The separate contact-page form opens WhatsApp with a combined enquiry for visitor review and manual sending. Direct email contact remains available.
 
 Recipient mapping was supplied explicitly by the owner:
 - To: sales@scriza.in

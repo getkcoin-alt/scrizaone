@@ -1,8 +1,6 @@
 "use client";
 
-// Opens the visitor's email client with a pre-filled enquiry to the sales inbox.
-// No data is sent to a server from this page. (A server-side form handler can
-// replace this once a mail/CRM API key is configured on Vercel.)
+// Opens WhatsApp with the visitor's complete enquiry for review and manual sending.
 import { useState } from "react";
 import { recordEvent } from "@/lib/measurement";
 import { company, services } from "@/lib/site";
@@ -13,21 +11,27 @@ export default function ContactForm({ currencies }) {
 
   const submit = (e) => {
     e.preventDefault();
-    recordEvent("enquiry_email_composed");
+    recordEvent("enquiry_whatsapp_composed");
     const subject = `Enquiry from ${f.name || "website visitor"}${f.company ? ` (${f.company})` : ""}: ${f.service}`;
-    const body = [
+    const message = [
+      "Hello ScrizaOne, I would like to discuss a project.",
+      subject,
+      "",
       `Name: ${f.name}`,
       `Email: ${f.email}`,
-      `Company: ${f.company}`,
+      `Company: ${f.company || "Not provided"}`,
       `Country: ${f.country}`,
       `Service: ${f.service}`,
       `Preferred quote currency: ${f.currency}`,
       "",
+      "Project details:",
       f.message,
       "",
       "Sent from scrizaone.com",
     ].join("\n");
-    window.location.href = `mailto:${company.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const whatsapp = new URL(company.whatsapp);
+    whatsapp.searchParams.set("text", message);
+    window.location.assign(whatsapp.toString());
   };
 
   return (
@@ -48,8 +52,8 @@ export default function ContactForm({ currencies }) {
         </select>
       </label>
       <label className="full">What are you building?<textarea required rows={5} value={f.message} onChange={set("message")} /></label>
-      <button className="btn" type="submit">Compose email</button>
-      <p className="small muted full">This opens your email app with your enquiry filled in. {company.replyRule}</p>
+      <button className="btn" type="submit">Continue on WhatsApp</button>
+      <p className="small muted full">This opens WhatsApp with all your details filled in. Review the message and press Send to submit your enquiry. {company.replyRule}</p>
     </form>
   );
 }
