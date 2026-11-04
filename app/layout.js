@@ -1,5 +1,6 @@
 import "./globals.css";
 import AnalyticsConsent from "@/components/AnalyticsConsent";
+import RizaWidget from "@/components/RizaWidget";
 import "@fontsource-variable/manrope";
 import "@fontsource-variable/dm-sans";
 import { SITE_URL, company } from "@/lib/site";
@@ -86,6 +87,7 @@ export default function RootLayout({ children }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify([organization, website]) }} />
         {children}
         <AnalyticsConsent />
+        <RizaWidget />
       </body>
     </html>
   );
