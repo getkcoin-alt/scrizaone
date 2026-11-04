@@ -27,3 +27,18 @@ Current production metadata contains only server-only OPEN_ROUTER and RESEND_MAI
 ## Rollback
 
 Use a normal revert commit or restore the prior verified production deployment through the existing Vercel workflow, then reconcile Git. Preserve later work. Never force-push. Browser-local saved briefs can be removed with Reset/delete; no server migration is needed. Historical growth baseline documents remain historical rather than overwritten with invented results.
+
+## Preview and verification boundary
+
+Initial preview deployment dpl_DU7z7y5a32kuHvNrm9Y71vmyBSk3 reached READY for commit 7b29177b626fc6c4ab6117a30f7f3d7f6823b8c1. Draft PR: https://github.com/getkcoin-alt/scrizaone/pull/1. It is protected by Vercel Authentication.
+
+Creating a temporary preview share link was rejected by automatic approval review because it would grant bearer-link access to the deployment without explicit authorization for that access change/recipient scope. No share token was created, no protection was disabled, and no alternate public deployment or alias was used. Production remains at the prior release. Browser desktop/mobile, focus, navigation, export and full UI error-state verification remain blocked pending authorized preview access or normal Vercel sign-in. Do not claim those checks passed.
+
+The built site was independently audited on localhost with isolated mock providers: all 56 HTML routes returned 200 with one H1 and expected www canonicals; all 49 original prerendered routes remain. Sitemap includes the demos and organic service but excludes meeting preparation. The meeting page sends noindex. Seven API checks covered origin/CSRF, a free-model response with an internal link, explicit consent, optional-slot acceptance, stable retry, truthful provider rejection and no private brief in subsequent public HTML. No real email/model transport was used. The automated evidence is stored locally in the QA report; the audit script is committed for reproducibility.
+
+## Final independent checks
+
+- Final npm test: 25 passing tests. Added explicit tab persistence/deletion and privacy-safe analytics checks.
+- Final production build: passed with process exit code 0 after the field-bound alignment changes.
+- npm run audit:buyer: passed (56 HTML routes, 49 retained original prerendered routes, seven affected API/security checks using isolated mocks).
+- The draft remains unmerged pending browser checks. There is no automatic calendar reservation or claim of current Resend delivery, GA4 collection, GSC indexing or commercial performance.

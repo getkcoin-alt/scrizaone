@@ -32,6 +32,6 @@ GA4 remains unconfigured until the public measurement ID and property collection
 
 ## Operational checks
 
-Run npm test, npm run check:research, npm run audit:growth, npm run build. On a protected preview, use the existing Vercel protection flow. Do not change access controls or buy observability services merely for QA. Preserve preview noindex and canonical production origin.
+Run npm test, npm run check:research, npm run audit:growth, npm run build, then npm run audit:buyer. The local buyer audit boots the built site on localhost with isolated provider mocks and checks all HTML routes and the affected API flow. It does not need production credentials or send real messages. On a protected preview, use the existing Vercel protection flow. Do not change access controls or buy observability services merely for QA. Preserve preview noindex and canonical production origin.
 
 No unsolicited emails, community posts, ads, backlink purchases, paid models or new customer database are included.
