@@ -1,3 +1,4 @@
+import CalendarBooking from "@/components/buyer/CalendarBooking";
 import Shell from "@/components/Shell";
 import ContactForm from "@/components/ContactForm";
 import { company } from "@/lib/site";
@@ -25,7 +26,7 @@ export default function Page() {
             <ContactForm currencies={[...new Set(localeList.map((l) => l.currency.code))]} />
           </div>
           <div>
-            <h2>Direct contact</h2>
+            <CalendarBooking/><h2>Direct contact</h2>
             <ul className="plain contact-list">
               <li><strong>Email:</strong> <a href={`mailto:${company.email}`}>{company.email}</a></li>
               <li><strong>Phone:</strong> <a href={company.phoneHref}>{company.phone}</a></li>

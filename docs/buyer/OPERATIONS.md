@@ -35,3 +35,15 @@ GA4 remains unconfigured until the public measurement ID and property collection
 Run npm test, npm run check:research, npm run audit:growth, npm run build, then npm run audit:buyer. The local buyer audit boots the built site on localhost with isolated provider mocks and checks all HTML routes and the affected API flow. It does not need production credentials or send real messages. On a protected preview, use the existing Vercel protection flow. Do not change access controls or buy observability services merely for QA. Preserve preview noindex and canonical production origin.
 
 No unsolicited emails, community posts, ads, backlink purchases, paid models or new customer database are included.
+
+## Calendar and analytics connection handoff
+
+The owner authorized connecting analytics/calendar and responded okay to the prior preview request. The renewed one-hour preview-link request was nevertheless rejected by automatic approval review as insufficiently explicit bearer-link sharing authorization. No token was created and no access control changed. Do not retry via another endpoint or exposure path without the required authorization.
+
+The latest plugin discovery still returned Google Calendar and Windsor.ai as not installed, with no calendar/analytics tools exposed in this session. Connection options were presented; account connection is not yet confirmed. GSC is connected but its exact property list still does not contain ScrizaOne. Vercel still has only OPEN_ROUTER and RESEND_MAIL in production, with no GA4 ID or calendar configuration.
+
+A validated optional NEXT_PUBLIC_BOOKING_URL is now supported on contact and local meeting preparation. Use a reviewed public Google appointment-schedule URL, not a private calendar/event URL or credential. The CTA stays hidden until configured. It opens Google without the brief, contact fields or private query parameters; only the optional coarse calendar_booking_opened event is recorded with analytics consent. Opening a booking page is not a confirmed reservation. Complete the actual booking on Google; the local enquiry preferred slot still does not reserve time.
+
+ChatGPT calendar permissions are not deployment credentials. Prefer a verified public appointment page for the website. Creating a new schedule still requires choosing the actual business calendar, availability, meeting duration and timezone; do not assume a personal calendar is the business calendar or create fake test invites. GA4 reporting access likewise does not itself create a web stream or configure property collection settings. Use the real verified G-... ID only after the account/stream can be identified.
+
+Google appointment-page references reviewed: https://support.google.com/calendar/answer/11608416 and https://support.google.com/calendar/answer/10733297.

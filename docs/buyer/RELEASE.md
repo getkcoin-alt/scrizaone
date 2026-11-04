@@ -42,3 +42,7 @@ The built site was independently audited on localhost with isolated mock provide
 - Final production build: passed with process exit code 0 after the field-bound alignment changes.
 - npm run audit:buyer: passed (56 HTML routes, 49 retained original prerendered routes, seven affected API/security checks using isolated mocks).
 - The draft remains unmerged pending browser checks. There is no automatic calendar reservation or claim of current Resend delivery, GA4 collection, GSC indexing or commercial performance.
+
+## Optional calendar handoff follow-up
+
+Prepared an allowlisted public Google booking-page CTA, hidden until a real NEXT_PUBLIC_BOOKING_URL is configured. It shares no brief or contact fields in the URL and never marks an enquiry slot booked. Added URL/security tests. Current account/plugin connection and explicit preview-sharing approval remain unresolved; no external account settings, appointments or production configuration were changed.
