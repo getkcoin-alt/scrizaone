@@ -54,3 +54,13 @@ Run npm test and npm run build. Browser checks cover desktop/mobile chat, keyboa
 After deployment, exercise the real free model and one clearly labelled internal setup enquiry to the exact authorized internal recipients. Do not fabricate a customer or claim inbox delivery from an accepted-email ID. Record the actual model/service result in the release report. Inspect redacted runtime errors; confirm privacy copy reflects live processing.
 
 Rollback source parent: 5d8b5ec6e1c9a9a4aa10c8b6019d72b5103d8881. Existing services, canonicals and country architecture stay intact. Revert with a normal commit; do not force-push or remove later work.
+
+## Live verification — 4 November 2026, 10:56 UTC
+
+- Main implementation: c45928b802dfc2bc8474466051a4f67b48b8641a; routing/privacy follow-up: 43e355ba4324e0e1e2d9de5e1223ec0b4b008b20. Production aliases were READY on Vercel.
+- Fifteen automated tests and the production build passed. Desktop/mobile browser checks passed using isolated provider mocks: chat, editable review, fixed recipients, Resend acceptance, origin/CSRF rejection, dialog fit/Escape, no browser errors, and preserved service canonical.
+- Real production session, avatar and homepage returned 200; API crawler exclusion was present. Two real chat turns returned 200 and correctly followed a UAE invoice-automation/Odoo brief. Runtime logs confirm nvidia/nemotron-3-ultra-550b-a55b:free served both turns.
+- Email delivery is NOT verified or operational yet. A clearly labelled internal setup enquiry was rejected by Resend with HTTP 403, classified SENDER_DOMAIN_NOT_VERIFIED. No accepted-email ID was received and no successful send/booking was claimed.
+- Required account fix: scrizaone.com must be verified for sending in the same Resend workspace as the Vercel RESEND_MAIL key, and that key must be permitted to send from riza@scrizaone.com. The owner's report of verification conflicts with the actual provider rejection; do not assume which workspace/domain configuration is wrong. Do not replace keys in chat or export them for debugging.
+- Resend browser access was signed out. Secure sign-in was started, then declined before completion; no domain settings were inspected or changed. Resume only if the owner authorizes continuing sign-in or fixes the domain/key workspace mismatch.
+- After that fix, repeat one labelled internal enquiry and check Resend acceptance, then delivery in the authorized mailboxes. Avoid repeated tests while the sender remains unverified. Calendar booking still requires a separate authorized calendar/availability integration; the current UI explicitly requests a preferred slot only.
