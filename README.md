@@ -18,10 +18,18 @@ Next.js 14 (App Router), statically generated. No external UI libraries.
 - Visitors get a dismissible suggestion banner; there is no automatic redirect.
 
 ## Environment
-- `NEXT_PUBLIC_SITE_URL` (optional): canonical origin, default `https://scrizaone.com`.
+- `NEXT_PUBLIC_SITE_URL` (optional): canonical origin, default `https://www.scrizaone.com`.
 
 ## Develop
 ```bash
 npm install
 npm run dev
 ```
+
+## Buyer experience
+
+- `/demos` — three bounded synthetic workflows with failures and resets.
+- `/tools/payment-readiness` — fintech/software/organic planning workspace; existing provider checklist retained.
+- `/meeting-prep` — browser-local brief and agenda, noindex and no public buyer records.
+- `docs/buyer/OPERATIONS.md` and `EVIDENCE.md` — operating loop, data handling, claims and dependencies.
+- Riza receives a reviewed brief locally; email recipients and validation stay server-controlled. Preferred time is optional and never a confirmed booking.

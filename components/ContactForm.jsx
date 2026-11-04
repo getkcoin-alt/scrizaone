@@ -43,7 +43,7 @@ export default function ContactForm({ currencies }) {
       <label>Service
         <select value={f.service} onChange={set("service")}>
           {services.map((s) => <option key={s.slug}>{s.name}</option>)}
-          <option>Something else</option>
+          <option>Organic growth planning</option><option>Something else</option>
         </select>
       </label>
       <label>Quote currency

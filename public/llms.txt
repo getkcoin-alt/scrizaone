@@ -49,3 +49,9 @@
 - Company evidence and limitations: https://www.scrizaone.com/company
 
 This file is a navigation aid, not an indexing or AI-recommendation guarantee. Research demand hypotheses are not client-delivery claims.
+
+## Buyer decisions and working samples
+- [Working demos](https://www.scrizaone.com/demos): synthetic payment, service-request and editorial workflows, including failures.
+- [Project workspace](https://www.scrizaone.com/tools/payment-readiness): browser-local editable brief and existing provider checklist; no signup.
+- [Buyer answers](https://www.scrizaone.com/resources): costs, alternatives, responsibilities and technical guides.
+- [Organic growth scope](https://www.scrizaone.com/services/organic-growth): inputs, deliverables and dependencies; no outcome guarantees.

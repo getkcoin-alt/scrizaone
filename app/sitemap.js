@@ -29,6 +29,6 @@ export default function sitemap() {
   }
   entries.push({ url: abs("/working-with-us"), lastModified: now, changeFrequency: "monthly", priority: 0.7 });
   entries.push({ url: abs("/contact"), lastModified: now, changeFrequency: "yearly", priority: 0.6 });
-  for (const path of ["/research", "/resources", "/tools/payment-readiness", "/company", "/privacy", ...guides.map(g => `/resources/${g.slug}`)]) { entries.push({url:abs(path),lastModified:new Date(guideDate),changeFrequency:"monthly",priority:0.7}); }
+  for (const path of ["/demos", "/services/organic-growth", "/research", "/resources", "/tools/payment-readiness", "/company", "/privacy", ...guides.map(g => `/resources/${g.slug}`)]) { entries.push({url:abs(path),lastModified:new Date(guideDate),changeFrequency:"monthly",priority:0.7}); }
   return entries;
 }

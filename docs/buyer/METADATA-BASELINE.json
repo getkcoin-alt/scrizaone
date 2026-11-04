@@ -1,0 +1,94 @@
+{
+  "observedAt": "2026-11-04",
+  "phase": "before-buyer-release",
+  "pages": [
+    {
+      "path": "/",
+      "status": 200,
+      "title": [
+        "ScrizaOne | Fintech, AI &amp; Custom Software Engineering"
+      ],
+      "canonical": [
+        "https://www.scrizaone.com"
+      ],
+      "h1Count": 1
+    },
+    {
+      "path": "/contact",
+      "status": 200,
+      "title": [
+        "Contact the Team | ScrizaOne"
+      ],
+      "canonical": [
+        "https://www.scrizaone.com/contact"
+      ],
+      "h1Count": 1
+    },
+    {
+      "path": "/resources",
+      "status": 200,
+      "title": [
+        "Engineering Resources \u2014 Fintech, AI &amp; Integration | ScrizaOne"
+      ],
+      "canonical": [
+        "https://www.scrizaone.com/resources"
+      ],
+      "h1Count": 1
+    },
+    {
+      "path": "/tools/payment-readiness",
+      "status": 200,
+      "title": [
+        "Free Payment Integration Planning Tool | ScrizaOne"
+      ],
+      "canonical": [
+        "https://www.scrizaone.com/tools/payment-readiness"
+      ],
+      "h1Count": 1
+    },
+    {
+      "path": "/services/fintech",
+      "status": 200,
+      "title": [
+        "Fintech Software Development &amp; Payment Integration | ScrizaOne"
+      ],
+      "canonical": [
+        "https://www.scrizaone.com/services/fintech"
+      ],
+      "h1Count": 1
+    },
+    {
+      "path": "/services/custom-software",
+      "status": 200,
+      "title": [
+        "Custom Software &amp; SaaS Development Company | ScrizaOne"
+      ],
+      "canonical": [
+        "https://www.scrizaone.com/services/custom-software"
+      ],
+      "h1Count": 1
+    },
+    {
+      "path": "/us",
+      "status": 200,
+      "title": [
+        "Fintech, AI &amp; Software Engineering for the United States | ScrizaOne"
+      ],
+      "canonical": [
+        "https://www.scrizaone.com/us"
+      ],
+      "h1Count": 1
+    },
+    {
+      "path": "/ae/services/fintech",
+      "status": 200,
+      "title": [
+        "Fintech Software Development &amp; Payment Integration for the UAE and the GCC | ScrizaOne"
+      ],
+      "canonical": [
+        "https://www.scrizaone.com/ae/services/fintech"
+      ],
+      "h1Count": 1
+    }
+  ]
+}
