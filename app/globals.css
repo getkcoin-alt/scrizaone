@@ -35,8 +35,8 @@ p { margin: 0 0 1.2em; }
 .mt-s { margin-top: 1.4rem; }
 .plain { list-style: none; padding: 0; margin: 0; }
 .plain li { margin: .5em 0; }
-.skip { position: absolute; left: -9999px; }
-.skip:focus { left: 16px; top: 8px; background: var(--cyan); padding: 10px 20px; z-index: 100; }
+.skip { position: fixed; left: 16px; top: 8px; transform: translateY(calc(-100% - 16px)); background: var(--cyan); padding: 10px 20px; z-index: 100; }
+.skip:focus-visible { transform: translateY(0); }
 /* A compact vector identity, shared across every page. */
 .brand-lockup { display: inline-flex; align-items: center; gap: 9px; white-space: nowrap; vertical-align: middle; }
 .brand-mark { width: 34px; height: 29px; flex: none; color: var(--teal); }
