@@ -47,3 +47,7 @@ A validated optional NEXT_PUBLIC_BOOKING_URL is now supported on contact and loc
 ChatGPT calendar permissions are not deployment credentials. Prefer a verified public appointment page for the website. Creating a new schedule still requires choosing the actual business calendar, availability, meeting duration and timezone; do not assume a personal calendar is the business calendar or create fake test invites. GA4 reporting access likewise does not itself create a web stream or configure property collection settings. Use the real verified G-... ID only after the account/stream can be identified.
 
 Google appointment-page references reviewed: https://support.google.com/calendar/answer/11608416 and https://support.google.com/calendar/answer/10733297.
+
+## Northstar continuation — 5 November 2026
+
+The entries above are historical snapshots. The current implementation, external dependency status, publication mechanism and validation are recorded in ../northstar/OPERATING-PLAN.md and ../northstar/RELEASE.md. This continuation expands the buyer workspace with AI review, economics and opt-in Riza guidance while preserving the earlier work.

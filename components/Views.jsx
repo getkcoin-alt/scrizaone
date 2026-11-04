@@ -1,3 +1,4 @@
+import DecisionPath from './growth/DecisionPath';
 import Link from "next/link";
 import { company, services } from "@/lib/site";
 import { locales } from "@/lib/locales";
@@ -188,7 +189,7 @@ export function ServiceView({ locale, slug }) {
         </div>
       </section>
 
-      <section className="section alt"><div className="wrap"><h2>Related engineering resources</h2><ul>{guides.filter(g => g.service === slug || g.slug === 'payment-events-and-reconciliation').map(g => <li key={g.slug}><Link href={`/resources/${g.slug}`}>{g.title}</Link></li>)}</ul><Link className="more" href="/research">Research local payment infrastructure →</Link></div></section>
+      <section className="section alt"><div className="wrap"><DecisionPath service={slug}/><h2>Related engineering resources</h2><ul>{guides.filter(g => g.service === slug || g.slug === 'payment-events-and-reconciliation').map(g => <li key={g.slug}><Link href={`/resources/${g.slug}`}>{g.title}</Link></li>)}</ul><Link className="more" href="/research">Research local payment infrastructure →</Link></div></section>
       <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({'@context':'https://schema.org','@type':'Service',name:s.title,description:s.description,url:SITE_URL+p(locale, `/services/${slug}`),provider:{'@id':'https://www.scriza.in/#organization'},serviceType:s.title})}} />
       <CtaBand />
     </>

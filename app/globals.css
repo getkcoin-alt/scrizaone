@@ -391,3 +391,45 @@ p { margin: 0 0 1.2em; }
 @media(max-width:760px){.buyer-toolbar,.demo-bar{align-items:flex-start;flex-direction:column;gap:16px}.buyer-paths,.buyer-fields,.meeting-grid{grid-template-columns:minmax(0,1fr)}.buyer-steps{gap:8px}.buyer-steps li{font-size:12px;gap:6px;align-items:flex-start;flex-direction:column}.buyer-path{padding:16px}.demo-surface{padding:20px}.demo-status{align-items:flex-start;flex-direction:column;gap:8px}.buyer-workspace .cta-row,.demo-surface .cta-row{align-items:stretch}.buyer-workspace .cta-row>*{width:100%}.meeting-grid{gap:28px}.buyer-next{flex-direction:column;gap:16px}.buyer-provider-check{padding:14px}}
 @media print{.site-header,.site-footer,.riza-launcher,.consent-bar,.meeting-workspace button,.meeting-workspace .text-button,.buyer-steps,.buyer-toolbar{display:none!important}.buyer-brief{min-height:900px;border:0}.meeting-grid{display:block}.meeting-workspace{color:#000;background:#fff}}
 .buyer-workspace [hidden],.riza-panel [hidden]{display:none!important}
+/* Contextual guidance and decision tools keep the existing brand and regional shell. */
+.decision-path { margin: 50px 0; padding: 32px; border: 1px solid var(--line); background: #eef8f7; border-radius: 16px; }
+.decision-path h2 { margin-top: 0; }
+.decision-path .grid-3 { gap: 16px; }
+.decision-step { display:block; padding:22px; background:white; border:1px solid #c9dfdd; border-radius:10px; text-decoration:none; transition:transform .2s,border-color .2s; }
+.decision-step:hover {transform:translateY(-3px);border-color:#008d88}
+.decision-step span {font-size:.7rem;letter-spacing:.04em;color:#376762}
+.decision-step h3 {font-size:1.05rem;margin:14px 0}
+.decision-step p {font-size:.84rem;margin:0}
+.article-body .decision-path .grid-3 {grid-template-columns:1fr}
+.resource-paths {display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-bottom:45px}
+.resource-paths a {padding:22px;border:1px solid var(--line);border-radius:10px;background:#f1faf9;font-weight:600}
+.economics-layout {display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:50px;align-items:start}
+.economics-layout fieldset {border:1px solid var(--line);padding:22px;margin:24px 0;border-radius:12px}
+.economics-layout legend {font-weight:700;padding:0 8px}
+.economics-layout label {display:grid;gap:8px;font-size:.84rem}
+.economics-layout input,.economics-layout select {width:100%;font:inherit;font-size:16px;padding:12px;border:1px solid #a9c0c1;border-radius:6px;background:white;color:var(--ink)}
+.economics-results {position:sticky;top:100px;border:1px solid #b7d4d1;padding:30px;background:#edf7f6;border-radius:18px}
+.economics-results h2 {font-size:1.75rem}
+.economics-results dt {font-size:.82rem;color:#42625e;margin-top:18px}
+.economics-results dd {font-family:var(--font-display);font-size:1.6rem;font-weight:700;margin:3px 0 0;overflow-wrap:anywhere}
+.economics-results details {margin:22px 0;font-size:.82rem}
+.economics-results summary {cursor:pointer;font-weight:650}
+.riza-guide-toggle {position:fixed;z-index:64;right:24px;bottom:107px;background:#e5fbf8;color:#16433d;border:1px solid #91cdc7;border-radius:20px;padding:8px 12px;font:600 .74rem var(--font-body);cursor:pointer}
+.riza-guide-card {position:fixed;z-index:66;right:24px;bottom:151px;width:345px;max-width:calc(100vw - 32px);max-height:calc(100dvh - 180px);overflow:auto;border:1px solid #7ebeb8;border-radius:18px;padding:20px;background:#f7fffd;box-shadow:0 15px 50px #082b2926;animation:riza-arrive .45s cubic-bezier(.2,.8,.2,1)}
+.riza-guide-heading {display:flex;align-items:center;justify-content:space-between;color:#376a63;font-size:.74rem;font-weight:700}
+.riza-guide-heading button {border:0;background:transparent;min-width:32px;min-height:32px;cursor:pointer;font-size:22px}
+.riza-guide-card p {font-size:.86rem;line-height:1.65;margin:10px 0}
+.riza-guide-card .small,.riza-guide-card details {font-size:.7rem}
+.riza-guide-card details {margin:16px 0}
+.riza-guide-card summary {cursor:pointer}
+.riza-guide-card .cta-row {gap:12px;margin:16px 0}
+.riza-guide-card .text-button {font-size:.75rem}
+.riza-flight {position:fixed;z-index:75;right:24px;bottom:28px;visibility:hidden;pointer-events:none;filter:drop-shadow(0 6px 12px #00a79955)}
+.riza-guided-target {outline:3px solid #008e86!important;outline-offset:7px;box-shadow:0 0 0 12px #00c7ba25}
+body:has(.consent-bar) .riza-launcher,body:has(.consent-bar) .riza-guide-toggle,body:has(.consent-bar) .riza-guide-card {visibility:hidden}
+body:has(.riza-overlay) .riza-guide-toggle {visibility:hidden}
+@keyframes riza-arrive {from{opacity:0;transform:translateY(16px) scale(.98)}to{opacity:1;transform:none}}
+@media(max-width:850px){.economics-layout{grid-template-columns:1fr}.economics-results{position:static}.decision-path .grid-3{grid-template-columns:1fr}.resource-paths{grid-template-columns:1fr}}
+@media(max-width:540px){.riza-guide-card{right:12px;bottom:143px;padding:16px}.riza-guide-toggle{right:15px;bottom:92px}.decision-path{padding:20px}.economics-results{padding:22px}.economics-layout{gap:25px}}
+@media(prefers-reduced-motion:reduce){.riza-guide-card,.decision-step{animation:none!important;transition:none!important}.riza-flight{display:none}}
+@media print{.riza-guide-toggle,.riza-guide-card,.riza-flight{display:none!important}.economics-results{position:static}}

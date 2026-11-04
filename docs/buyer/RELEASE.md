@@ -46,3 +46,7 @@ The built site was independently audited on localhost with isolated mock provide
 ## Optional calendar handoff follow-up
 
 Prepared an allowlisted public Google booking-page CTA, hidden until a real NEXT_PUBLIC_BOOKING_URL is configured. It shares no brief or contact fields in the URL and never marks an enquiry slot booked. Added URL/security tests. Current account/plugin connection and explicit preview-sharing approval remain unresolved; no external account settings, appointments or production configuration were changed.
+
+## Northstar continuation — 5 November 2026
+
+The entries above are historical snapshots. The current implementation, external dependency status, publication mechanism and validation are recorded in ../northstar/OPERATING-PLAN.md and ../northstar/RELEASE.md. This continuation expands the buyer workspace with AI review, economics and opt-in Riza guidance while preserving the earlier work.

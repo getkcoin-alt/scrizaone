@@ -1,0 +1,204 @@
+[
+  {
+    "market": "KE",
+    "country": "Kenya",
+    "pillar": "fintech",
+    "primary": "M-PESA payment reconciliation Kenya",
+    "supporting": [
+      "Daraja callback order pending",
+      "M-PESA ERP integration",
+      "M-PESA payment status mismatch"
+    ],
+    "intent": "Commercial investigation / practical implementation",
+    "target": "/journal/mpesa-payment-received-order-pending",
+    "existingResource": "mpesa-erp-reconciliation",
+    "publication": "2026-11-05T03:30:00.000Z",
+    "reason": "Existing Daraja integration access and observed local reconciliation products; focus on a concrete operations failure, not generic fintech outsourcing.",
+    "volume": null,
+    "difficulty": null,
+    "demand": "Unvalidated",
+    "reviewedAt": "2026-11-04",
+    "sources": [
+      {
+        "label": "Safaricom Daraja developer platform",
+        "url": "https://developer.safaricom.co.ke/"
+      },
+      {
+        "label": "CBK national payments system",
+        "url": "https://www.centralbank.go.ke/national-payments-system/"
+      }
+    ]
+  },
+  {
+    "market": "AE",
+    "country": "United Arab Emirates",
+    "pillar": "ai-automation",
+    "primary": "AI quotation automation UAE",
+    "supporting": [
+      "quotation workflow automation Dubai",
+      "Arabic English document automation",
+      "AI automation ROI UAE"
+    ],
+    "intent": "Commercial investigation / practical implementation",
+    "target": "/journal/uae-quotation-automation-human-review",
+    "existingResource": "uae-document-automation",
+    "publication": "2026-11-06T03:30:00.000Z",
+    "reason": "UAE AI policy and observed quote-generation offers support investigation; a specific bilingual quotation workflow is a testable hypothesis.",
+    "volume": null,
+    "difficulty": null,
+    "demand": "Unvalidated",
+    "reviewedAt": "2026-11-04",
+    "sources": [
+      {
+        "label": "UAE Charter for the development and use of AI",
+        "url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/Ai/The-UAE-Charter-for-the-Development-and-Use-of-Artificial-Intelligence"
+      }
+    ]
+  },
+  {
+    "market": "NG",
+    "country": "Nigeria",
+    "pillar": "fintech",
+    "primary": "open banking API integration Nigeria",
+    "supporting": [
+      "open banking consent Nigeria",
+      "Nigeria account aggregation software",
+      "bank API integration requirements Nigeria"
+    ],
+    "intent": "Commercial investigation / practical implementation",
+    "target": "/journal/nigeria-open-banking-consent-lifecycle",
+    "existingResource": "payment-integration-responsibilities",
+    "publication": "2026-11-07T03:30:00.000Z",
+    "reason": "CBN open-banking guidance establishes local infrastructure context. A consent and access lifecycle is a narrower engineering topic than generic fintech development.",
+    "volume": null,
+    "difficulty": null,
+    "demand": "Unvalidated",
+    "reviewedAt": "2026-11-04",
+    "sources": [
+      {
+        "label": "CBN payments system and open-banking guidance",
+        "url": "https://www.cbn.gov.ng/PaymentsSystem/"
+      },
+      {
+        "label": "Open Banking Nigeria technical standards and scope",
+        "url": "https://docs.openbanking.ng/standard"
+      }
+    ]
+  },
+  {
+    "market": "SA",
+    "country": "Saudi Arabia",
+    "pillar": "custom-software",
+    "primary": "ZATCA ERP integration Saudi Arabia",
+    "supporting": [
+      "Fatoora integration exception handling",
+      "ZATCA invoice validation workflow",
+      "Saudi e invoicing software integration"
+    ],
+    "intent": "Commercial investigation / practical implementation",
+    "target": "/journal/saudi-zatca-erp-exception-workflow",
+    "existingResource": "buy-or-build-software",
+    "publication": "2026-11-08T03:30:00.000Z",
+    "reason": "ZATCA publishes integration and developer materials. Target ERP exception handling, with taxpayer scope and regulatory interpretation confirmed separately.",
+    "volume": null,
+    "difficulty": null,
+    "demand": "Unvalidated",
+    "reviewedAt": "2026-11-04",
+    "sources": [
+      {
+        "label": "ZATCA: what e-invoicing is and its phases",
+        "url": "https://www.zatca.gov.sa/en/E-Invoicing/Introduction/Pages/What-is-e-invoicing.aspx"
+      },
+      {
+        "label": "ZATCA e-invoicing specifications and developer resources",
+        "url": "https://www.zatca.gov.sa/en/E-Invoicing/Pages/default.aspx"
+      }
+    ]
+  },
+  {
+    "market": "BR",
+    "country": "Brazil",
+    "pillar": "fintech",
+    "primary": "Pix Automático SaaS integração",
+    "supporting": [
+      "cobrança recorrente Pix Automático",
+      "Pix Automático conciliação",
+      "Pix recurring billing integration Brazil"
+    ],
+    "intent": "Commercial investigation / practical implementation",
+    "target": "/journal/pix-automatico-saas-recurring-billing",
+    "existingResource": "payto-agreement-lifecycle",
+    "publication": "2026-11-09T03:30:00.000Z",
+    "reason": "Banco Central documents Pix Automático recurring collections. Local Portuguese terminology is retained; this article is an English engineering guide, not a Portuguese landing page.",
+    "volume": null,
+    "difficulty": null,
+    "demand": "Unvalidated",
+    "reviewedAt": "2026-11-04",
+    "sources": [
+      {
+        "label": "Banco Central: Pix Automático",
+        "url": "https://www.bcb.gov.br/pix-automatico"
+      },
+      {
+        "label": "Banco Central: Pix Automático versus recurring scheduled Pix",
+        "url": "https://bcb.gov.br/meubc/faqs/p/diferenca-entre-pix-automatico-e-pix-agendado-recorrente"
+      }
+    ]
+  },
+  {
+    "market": "GB",
+    "country": "United Kingdom",
+    "pillar": "custom-software",
+    "primary": "SaaS MVP development cost UK",
+    "supporting": [
+      "MVP scope checklist UK",
+      "custom software running costs UK",
+      "buy or build SaaS MVP"
+    ],
+    "intent": "Commercial investigation / practical implementation",
+    "target": "/journal/uk-saas-mvp-budget-scope",
+    "existingResource": "custom-software-cost-drivers",
+    "publication": "2026-11-10T03:30:00.000Z",
+    "reason": "Observed UK provider search results explicitly discuss MVP cost and scope. This establishes visible competing content, not measured buyer volume or low competition.",
+    "volume": null,
+    "difficulty": null,
+    "demand": "Unvalidated",
+    "reviewedAt": "2026-11-04",
+    "sources": [
+      {
+        "label": "GOV.UK Service Manual: the discovery phase",
+        "url": "https://www.gov.uk/service-manual/agile-delivery/how-the-discovery-phase-works"
+      }
+    ]
+  },
+  {
+    "market": "US",
+    "country": "United States",
+    "pillar": "ai-automation",
+    "primary": "AI customer support automation human handoff",
+    "supporting": [
+      "AI support pilot cost US",
+      "customer service AI escalation workflow",
+      "AI support automation evaluation"
+    ],
+    "intent": "Commercial investigation / practical implementation",
+    "target": "/journal/us-ai-support-human-escalation",
+    "existingResource": "uae-document-automation",
+    "publication": "2026-11-11T03:30:00.000Z",
+    "reason": "US Census tracks business AI adoption and NIST publishes risk-management guidance. A support handoff pilot is a testable use-case hypothesis, not a claim of universal US demand.",
+    "volume": null,
+    "difficulty": null,
+    "demand": "Unvalidated",
+    "reviewedAt": "2026-11-04",
+    "sources": [
+      {
+        "label": "US Census: Business Trends and Outlook Survey",
+        "url": "https://www.census.gov/hfp/btos/data"
+      },
+      {
+        "label": "NIST AI Risk Management Framework",
+        "url": "https://www.nist.gov/itl/ai-risk-management-framework"
+      }
+    ]
+  }
+]
