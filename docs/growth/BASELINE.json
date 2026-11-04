@@ -1,0 +1,39 @@
+{
+  "observedAt": "2026-11-04",
+  "sourceCommitBeforeChange": "560ef7198efc507200095505384543cd8fa49565",
+  "productionHost": "https://www.scrizaone.com",
+  "verified": {
+    "homepageHttpStatus": 200,
+    "homepageNoindexHeader": false,
+    "apexRedirectDestination": "https://www.scrizaone.com/",
+    "oldCanonicalOrigin": "https://scrizaone.com",
+    "canonicalMismatch": true,
+    "existingPageRoutes": 34,
+    "existingResearchHub": false,
+    "existingEnquiryMethod": "mailto composition; no server-side delivery receipt",
+    "analyticsCodePresent": false,
+    "vercelWebAnalyticsEnabled": false
+  },
+  "metrics": {
+    "organicImpressions": null,
+    "organicClicks": null,
+    "nonBrandedSearchVisibility": null,
+    "countryOrganicSessions": null,
+    "serviceDiscovery": null,
+    "observedAiReferralSessions": null,
+    "verifiedAiCitations": null,
+    "organicReferringDomains": null,
+    "brandQueryClicks": null,
+    "qualifiedInternationalEnquiries": null,
+    "leadConversionRate": null,
+    "organicAttributedRevenue": null
+  },
+  "nullMeaning": "Unknown / no authorized data source. Never coerce to zero.",
+  "verificationLimits": [
+    "HTTP success and robots directives do not prove search indexing or AI inclusion.",
+    "Search Console and Bing Webmaster properties are not connected or verified through this session.",
+    "Vercel returned web_analytics_not_enabled; no historical traffic baseline exists in that service.",
+    "Published company identifiers and certificate statements are company-reported, not independently issuer-verified.",
+    "Payment operator research establishes infrastructure; it does not establish local procurement demand."
+  ]
+}

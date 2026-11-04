@@ -4,6 +4,7 @@
 // No data is sent to a server from this page. (A server-side form handler can
 // replace this once a mail/CRM API key is configured on Vercel.)
 import { useState } from "react";
+import { recordEvent } from "@/lib/measurement";
 import { company, services } from "@/lib/site";
 
 export default function ContactForm({ currencies }) {
@@ -12,6 +13,7 @@ export default function ContactForm({ currencies }) {
 
   const submit = (e) => {
     e.preventDefault();
+    recordEvent("enquiry_email_composed");
     const subject = `Enquiry from ${f.name || "website visitor"}${f.company ? ` (${f.company})` : ""}: ${f.service}`;
     const body = [
       `Name: ${f.name}`,

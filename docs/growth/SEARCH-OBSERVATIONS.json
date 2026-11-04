@@ -1,0 +1,62 @@
+{
+  "observedAt": "2026-11-04",
+  "method": "Country-explicit English queries in the available web search service. No country-localized IP, device or search-account setting was available. These are research queries and surfaced primary results, not measured end-user search logs, reproducible local rankings or volume estimates.",
+  "samples": [
+    {
+      "country": "US",
+      "query": "FedNow integration software development United States",
+      "primaryResult": "https://www.frbservices.org/financial-services/fednow-service/innovator-exchanges/jj4tech/",
+      "interpretation": "Technology-provider results; direct software development demand remains unmeasured.",
+      "position": null,
+      "searchVolume": null
+    },
+    {
+      "country": "AU",
+      "query": "PayTo API integration Australia business",
+      "primaryResult": "https://docs.commbank.com.au/apis/payto/business-readiness-requirements/",
+      "interpretation": "Bank implementation and readiness documentation; sponsor onboarding is a concrete scope constraint.",
+      "position": null,
+      "searchVolume": null
+    },
+    {
+      "country": "KE",
+      "query": "M-PESA ERP integration Kenya developer",
+      "primaryResult": "https://integrations.co.ke/mpesa-integration",
+      "interpretation": "Local integration service offers are present; low competition cannot be assumed.",
+      "position": null,
+      "searchVolume": null
+    },
+    {
+      "country": "NG",
+      "query": "NIBSS NIP integration software Nigeria",
+      "primaryResult": "https://www.integrabanking.ng/integrations/",
+      "interpretation": "Platform substitutes are present; a bespoke connector is not necessarily the right offer.",
+      "position": null,
+      "searchVolume": null
+    },
+    {
+      "country": "GB",
+      "query": "Faster Payments API integration developer UK",
+      "primaryResult": "https://www.natwest.com/corporates/everyday-banking/bankline-direct/bankline-direct-apis/financial-institutions.html",
+      "interpretation": "Bank and provider documentation competes with engineering-procurement intent.",
+      "position": null,
+      "searchVolume": null
+    },
+    {
+      "country": "AE",
+      "query": "AI document automation UAE logistics",
+      "primaryResult": "https://www.shyphan.com/ai-solutions-for-logistics-dubai.html",
+      "interpretation": "Local industry-specific suppliers already publish offers; demand volume remains unknown.",
+      "position": null,
+      "searchVolume": null
+    },
+    {
+      "country": "SG",
+      "query": "PayNow Corporate integration Singapore ERP",
+      "primaryResult": "https://www.dbs.com.sg/corporate/solutions/cash-management/paynow-corporate",
+      "interpretation": "Bank product pages are relevant substitutes; validate whether buyers need access, a gateway or ERP reconciliation.",
+      "position": null,
+      "searchVolume": null
+    }
+  ]
+}

@@ -1,6 +1,6 @@
 # ScrizaOne (Scriza Private Limited)
 
-> ScrizaOne (https://scrizaone.com) is the international website of Scriza Private Limited, a software engineering company headquartered in Greater Noida, India. Core expertise: fintech integration and development (payment integrations, payments and bill-payment platforms, billing, ledgers and reconciliation). Also: AI agents and workflow automation, and custom software and SaaS. The India website is https://www.scriza.in.
+> ScrizaOne (https://www.scrizaone.com) is the international website of Scriza Private Limited, a software engineering company headquartered in Greater Noida, India. Core expertise: fintech integration and development (payment integrations, payments and bill-payment platforms, billing, ledgers and reconciliation). Also: AI agents and workflow automation, and custom software and SaaS. The India website is https://www.scriza.in.
 
 ## Company facts
 - Legal entity: Scriza Private Limited (incorporated July 2022)
@@ -19,25 +19,33 @@
 - Quotes are per project, by milestone, after a free discovery call, in the client's currency (USD, GBP, EUR, CAD, AUD, SGD or AED)
 
 ## Regional pages
-- Global: https://scrizaone.com/
-- United States (USD): https://scrizaone.com/us
-- United Kingdom (GBP): https://scrizaone.com/uk
-- Canada (CAD): https://scrizaone.com/ca
-- Australia & New Zealand (AUD): https://scrizaone.com/au
-- Singapore & Southeast Asia (SGD): https://scrizaone.com/sg
-- UAE & GCC (AED): https://scrizaone.com/ae
-- Europe (EUR): https://scrizaone.com/eu
+- Global: https://www.scrizaone.com/
+- United States (USD): https://www.scrizaone.com/us
+- United Kingdom (GBP): https://www.scrizaone.com/uk
+- Canada (CAD): https://www.scrizaone.com/ca
+- Australia & New Zealand (AUD): https://www.scrizaone.com/au
+- Singapore & Southeast Asia (SGD): https://www.scrizaone.com/sg
+- UAE & GCC (AED): https://www.scrizaone.com/ae
+- Europe (EUR): https://www.scrizaone.com/eu
 - India: https://www.scriza.in
 
 ## Key pages
-- Fintech integration & development: https://scrizaone.com/services/fintech
-- AI agents & automation: https://scrizaone.com/services/ai-automation
-- Custom software & SaaS: https://scrizaone.com/services/custom-software
-- Working with Scriza from anywhere: https://scrizaone.com/working-with-us
-- Contact: https://scrizaone.com/contact
+- Fintech integration & development: https://www.scrizaone.com/services/fintech
+- AI agents & automation: https://www.scrizaone.com/services/ai-automation
+- Custom software & SaaS: https://www.scrizaone.com/services/custom-software
+- Working with Scriza from anywhere: https://www.scrizaone.com/working-with-us
+- Contact: https://www.scrizaone.com/contact
 
 ## Products built and operated by Scriza
 - ScrizaPay: bill payments on India's Bharat Connect (BBPS) ecosystem (India-only service) — https://scrizapay.com
 - HRVico: HRMS and payroll (primarily India) — https://hrvico.com
 - Edu2All: school ERP (primarily India) — https://edu2all.in
 - Hostelo: accommodation discovery (Indian cities) — https://hostelo.in
+
+## Research and engineering resources
+- Evidence-led market research: https://www.scrizaone.com/research
+- Source-backed guides: https://www.scrizaone.com/resources
+- Free planning tool: https://www.scrizaone.com/tools/payment-readiness
+- Company evidence and limitations: https://www.scrizaone.com/company
+
+This file is a navigation aid, not an indexing or AI-recommendation guarantee. Research demand hypotheses are not client-delivery claims.

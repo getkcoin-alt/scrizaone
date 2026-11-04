@@ -1,0 +1,5 @@
+import { ImageResponse } from 'next/og';
+export const alt='ScrizaOne — fintech, AI and custom software engineering';
+export const size={width:1200,height:630};
+export const contentType='image/png';
+export default function Image(){return new ImageResponse(<div style={{width:'100%',height:'100%',background:'#0a1016',color:'#f1f3f2',display:'flex',flexDirection:'column',padding:'72px',justifyContent:'space-between'}}><div style={{display:'flex',alignItems:'center',gap:20}}><svg viewBox="0 0 100 84" width="66" height="56" fill="#00d9d0"><path d="M98 2H36C16 2 5 15 5 32c0 15 11 25 27 25h20V45h-5l19-12v27c0 5-3 8-9 8H18L2 82h60c21 0 33-13 33-31 0-16-12-27-28-27h-1L37 42h-7c-5 0-8-4-8-9s4-9 10-9h45Z"/></svg><span style={{fontSize:38,fontWeight:700}}>SCRIZAONE</span></div><div style={{fontSize:68,lineHeight:1.12,letterSpacing:'-2px',display:'flex',flexDirection:'column'}}><span style={{color:'#00d9d0'}}>Fintech. AI.</span><span>Custom software engineering.</span></div><div style={{display:'flex',justifyContent:'space-between',fontSize:22,color:'#b1bfc3'}}><span>Engineering by Scriza Private Limited</span><span>www.scrizaone.com</span></div></div>,size)}

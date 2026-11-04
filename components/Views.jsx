@@ -3,6 +3,8 @@ import { company, services } from "@/lib/site";
 import { locales } from "@/lib/locales";
 import { serviceContent } from "@/lib/service-content";
 import HeroArtwork from "./HeroArtwork";
+import { guides } from "@/lib/guides";
+import { SITE_URL } from "@/lib/site";
 
 const p = (locale, sub = "") => `${locales[locale].path}${sub}` || "/";
 
@@ -121,6 +123,7 @@ export function HomeView({ locale }) {
         </div>
       </section>
 
+      <section className="section alt"><div className="wrap"><p className="eyebrow">Engineering resources</p><h2>Useful knowledge. Clear boundaries.</h2><div className="grid-3 resource-grid">{guides.slice(0, 3).map(g => <Link className="card link-card" key={g.slug} href={`/resources/${g.slug}`}><p className="small muted">{g.category}</p><h3>{g.title}</h3><p>{g.description}</p><span className="more">Read the guide →</span></Link>)}</div><div className="cta-row"><Link className="more" href="/research">Explore local payment infrastructure →</Link><Link className="more" href="/tools/payment-readiness">Build an integration planning brief →</Link></div></div></section>
       <CtaBand />
     </>
   );
@@ -184,6 +187,8 @@ export function ServiceView({ locale, slug }) {
         </div>
       </section>
 
+      <section className="section alt"><div className="wrap"><h2>Related engineering resources</h2><ul>{guides.filter(g => g.service === slug || g.slug === 'payment-events-and-reconciliation').map(g => <li key={g.slug}><Link href={`/resources/${g.slug}`}>{g.title}</Link></li>)}</ul><Link className="more" href="/research">Research local payment infrastructure →</Link></div></section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify({'@context':'https://schema.org','@type':'Service',name:s.title,description:s.description,url:SITE_URL+p(locale, `/services/${slug}`),provider:{'@id':'https://www.scriza.in/#organization'},serviceType:s.title})}} />
       <CtaBand />
     </>
   );

@@ -1,0 +1,1599 @@
+{
+  "version": "1.0.0",
+  "reviewedAt": "2026-11-04",
+  "status": "Initial evidence-backed infrastructure scan; commercial validation incomplete",
+  "methodology": "Twenty markets selected for source-documented payment systems, integration relevance and delivery-language/partner-access feasibility. This is a provisional shortlist, not a measured top-20 ranking. No country search volumes, low-competition claims or revenue estimates are invented. AI and software needs are labelled hypotheses unless separately sourced. Primary documents establish infrastructure, not demand. No mass-produced country sales pages.",
+  "countries": [
+    {
+      "code": "US",
+      "country": "United States",
+      "region": "North America",
+      "languages": [
+        "English",
+        "Spanish"
+      ],
+      "infrastructure": [
+        "FedNow",
+        "bank-sponsored instant payments",
+        "OBO"
+      ],
+      "ecosystem": "FedNow supports instant payments through participating depository institutions. Non-bank fintech access depends on a financial-institution arrangement.",
+      "buyerHypothesis": "Payroll and treasury platforms",
+      "softwareRequirements": "Bank-sponsored payouts, transaction status and reconciliation",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Bank-sponsored payouts, transaction status and reconciliation",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Payroll and treasury platforms",
+        "Vertical SaaS and treasury operations"
+      ],
+      "searchCandidates": [
+        "instant payment integration",
+        "FedNow bank partner integration"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Insurance document intake with human review",
+      "customSoftwareHypothesis": "Vertical SaaS and treasury operations",
+      "potentialSolutions": [
+        "Bank-sponsored payouts, transaction status and reconciliation",
+        "Insurance document intake with human review",
+        "Vertical SaaS and treasury operations"
+      ],
+      "competitorIds": [
+        "10pearls",
+        "ciandt",
+        "jj4tech"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Now",
+      "selectionReason": "English delivery and a documented bank-partner access route",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "FedNow: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.frbservices.org/resources/financial-services/fednow-service-resources/fednow-payment-agents-explained/",
+          "title": "Federal Reserve Financial Services — fintech access",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "CA",
+      "country": "Canada",
+      "region": "North America",
+      "languages": [
+        "English",
+        "French"
+      ],
+      "infrastructure": [
+        "Real-Time Rail",
+        "Interac e-Transfer",
+        "ACSS"
+      ],
+      "ecosystem": "Payments Canada describes a sequenced RTR launch targeting Q4 2026. Availability must be verified with the participant; do not treat a launch target as universal access.",
+      "buyerHypothesis": "Payroll and financial operations teams",
+      "softwareRequirements": "Participant onboarding, ISO 20022 mapping and settlement exception handling",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Participant onboarding, ISO 20022 mapping and settlement exception handling",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Payroll and financial operations teams",
+        "Payroll and accounting integrations"
+      ],
+      "searchCandidates": [
+        "RTR integration readiness",
+        "payment reconciliation software Canada"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Bilingual support knowledge retrieval",
+      "customSoftwareHypothesis": "Payroll and accounting integrations",
+      "potentialSolutions": [
+        "Participant onboarding, ISO 20022 mapping and settlement exception handling",
+        "Bilingual support knowledge retrieval",
+        "Payroll and accounting integrations"
+      ],
+      "competitorIds": [
+        "10pearls"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Next",
+      "selectionReason": "Documented infrastructure transition; rollout uncertainty limits immediate delivery assumptions",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "Real-Time Rail: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.payments.ca/systems-services/payment-systems/real-time-rail-payment-system/testing-and-launch",
+          "title": "Payments Canada — testing and launch",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "GB",
+      "country": "United Kingdom",
+      "region": "Europe",
+      "languages": [
+        "English"
+      ],
+      "infrastructure": [
+        "Faster Payments",
+        "Confirmation of Payee",
+        "Credit Payment Recovery"
+      ],
+      "ecosystem": "Pay.UK describes Faster Payments and Confirmation of Payee. Name checking, payment execution and recovery are separate concerns.",
+      "buyerHypothesis": "B2B payment operations and accounting SaaS",
+      "softwareRequirements": "Beneficiary checking, partner APIs and payment exception workflows",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Beneficiary checking, partner APIs and payment exception workflows",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "B2B payment operations and accounting SaaS",
+        "Operations platforms and finance integrations"
+      ],
+      "searchCandidates": [
+        "Faster Payments API integration",
+        "Confirmation of Payee integration"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Accounting document extraction with approval",
+      "customSoftwareHypothesis": "Operations platforms and finance integrations",
+      "potentialSolutions": [
+        "Beneficiary checking, partner APIs and payment exception workflows",
+        "Accounting document extraction with approval",
+        "Operations platforms and finance integrations"
+      ],
+      "competitorIds": [
+        "10pearls",
+        "natwest"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Now",
+      "selectionReason": "English delivery and explicit payment/recovery semantics",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "Faster Payments: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.wearepay.uk/what-we-do/payment-systems/faster-payment-system/how-faster-payments-work/",
+          "title": "Pay.UK — how Faster Payments work",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "DE",
+      "country": "Germany",
+      "region": "Europe",
+      "languages": [
+        "German",
+        "English"
+      ],
+      "infrastructure": [
+        "Echtzeitüberweisung",
+        "Empfängerüberprüfung",
+        "EBICS",
+        "FinTS"
+      ],
+      "ecosystem": "Bundesbank documents SEPA instant transfers, EBICS and FinTS for its CAM-Instant account holders. That access model is not a universal commercial API.",
+      "buyerHypothesis": "Finance teams and payment software vendors",
+      "softwareRequirements": "Bank statement ingestion and instant-transfer status mapping",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Bank statement ingestion and instant-transfer status mapping",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Finance teams and payment software vendors",
+        "ERP connectors and B2B operational software"
+      ],
+      "searchCandidates": [
+        "EBICS Schnittstelle Entwicklung",
+        "Echtzeitüberweisung Integration"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "German-language supplier-document extraction",
+      "customSoftwareHypothesis": "ERP connectors and B2B operational software",
+      "potentialSolutions": [
+        "Bank statement ingestion and instant-transfer status mapping",
+        "German-language supplier-document extraction",
+        "ERP connectors and B2B operational software"
+      ],
+      "competitorIds": [
+        "brainstation"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Next",
+      "selectionReason": "Specific bank integration vocabulary; German buyer-language validation needed",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "Echtzeitüberweisung: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.bundesbank.de/en/tasks/payment-systems/customer-access-mechanism/cam-instant",
+          "title": "Bundesbank — CAM-Instant",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        },
+        {
+          "url": "https://www.bundesbank.de/dynamic/action/de/aufgaben/unbarer-zahlungsverkehr/veroeffentlichungen/fragen-und-antworten-zu-echtzeitueberweisungen-und-empfaengerueberpruefung/963980/fragen-und-antworten-zu-echtzeitueberweisungen-und-empfaengerueberpruefung-",
+          "title": "Bundesbank — instant payments and verification",
+          "accessed": "2026-11-04",
+          "supports": "German terminology"
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "FR",
+      "country": "France",
+      "region": "Europe",
+      "languages": [
+        "French",
+        "English"
+      ],
+      "infrastructure": [
+        "virement SEPA instantané",
+        "vérification du bénéficiaire",
+        "IBAN"
+      ],
+      "ecosystem": "Banque de France explains instant SEPA transfers and beneficiary verification. Receiving, initiating and verifying are distinct implementation responsibilities.",
+      "buyerHypothesis": "Treasury and accounts-receivable software teams",
+      "softwareRequirements": "Beneficiary-result handling and invoice-to-payment matching",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Beneficiary-result handling and invoice-to-payment matching",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Treasury and accounts-receivable software teams",
+        "Finance workflow and ERP integration"
+      ],
+      "searchCandidates": [
+        "intégration virement instantané",
+        "rapprochement bancaire automatisé"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "French-language invoice intake and review",
+      "customSoftwareHypothesis": "Finance workflow and ERP integration",
+      "potentialSolutions": [
+        "Beneficiary-result handling and invoice-to-payment matching",
+        "French-language invoice intake and review",
+        "Finance workflow and ERP integration"
+      ],
+      "competitorIds": [
+        "brainstation"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Next",
+      "selectionReason": "Source-language terminology is available; demand and native copy still need validation",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "virement SEPA instantané: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.banque-france.fr/fr/a-votre-service/particuliers/mieux-connaitre-moyens-paiement/le-virement-sepa-instantane",
+          "title": "Banque de France — instant transfers",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "AE",
+      "country": "United Arab Emirates",
+      "region": "Middle East",
+      "languages": [
+        "English",
+        "Arabic"
+      ],
+      "infrastructure": [
+        "Aani",
+        "proxy payments",
+        "request to pay",
+        "LFI"
+      ],
+      "ecosystem": "Aani is delivered through licensed financial institutions and payment service providers; it includes alias and QR-based payment experiences.",
+      "buyerHypothesis": "Merchant and enterprise payment operations",
+      "softwareRequirements": "Provider-led collections, payment status and reconciliation",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Provider-led collections, payment status and reconciliation",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Merchant and enterprise payment operations",
+        "Logistics operations and enterprise workflow platforms"
+      ],
+      "searchCandidates": [
+        "Aani integration partner",
+        "AI document automation UAE"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Arabic/English logistics-document intake and customer-support handoff",
+      "customSoftwareHypothesis": "Logistics operations and enterprise workflow platforms",
+      "potentialSolutions": [
+        "Provider-led collections, payment status and reconciliation",
+        "Arabic/English logistics-document intake and customer-support handoff",
+        "Logistics operations and enterprise workflow platforms"
+      ],
+      "competitorIds": [
+        "raqmiyat",
+        "shyphan"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Now",
+      "selectionReason": "Published local payment route plus AI governance material and strong working-hour overlap",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "Aani: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://aep.ae/en/services/aani/",
+          "title": "Al Etihad Payments — Aani",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        },
+        {
+          "url": "https://u.ae/en/about-the-uae/strategies-initiatives-and-awards/policies/cyber-activities/The-National-Cyber-Security-Policy-for-Artificial-Intelligence",
+          "title": "UAE Government — AI security policy",
+          "accessed": "2026-11-04",
+          "supports": "AI governance and human-oversight topics"
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "SA",
+      "country": "Saudi Arabia",
+      "region": "Middle East",
+      "languages": [
+        "Arabic",
+        "English"
+      ],
+      "infrastructure": [
+        "sarie",
+        "alternative identifiers",
+        "account verification",
+        "PIS"
+      ],
+      "ecosystem": "SAMA describes sarie instant transfers and beneficiary verification. Its open-banking framework separately covers payment initiation.",
+      "buyerHypothesis": "Payment operations and enterprise finance teams",
+      "softwareRequirements": "Beneficiary verification and licensed-partner payment initiation",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Beneficiary verification and licensed-partner payment initiation",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Payment operations and enterprise finance teams",
+        "Retail operations and accounting connectors"
+      ],
+      "searchCandidates": [
+        "sarie integration",
+        "أتمتة العمليات بالذكاء الاصطناعي"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Arabic document processing with human approval",
+      "customSoftwareHypothesis": "Retail operations and accounting connectors",
+      "potentialSolutions": [
+        "Beneficiary verification and licensed-partner payment initiation",
+        "Arabic document processing with human approval",
+        "Retail operations and accounting connectors"
+      ],
+      "competitorIds": [
+        "raqmiyat"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Next",
+      "selectionReason": "Explicit account-verification use cases; Arabic validation and local onboarding remain gates",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "sarie: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.sama.gov.sa/en-US/payment/Pages/Sarie.aspx",
+          "title": "Saudi Central Bank — sarie",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        },
+        {
+          "url": "https://www.sama.gov.sa/en-us/mediacenter/news/pages/news-1036.aspx",
+          "title": "SAMA — open banking payment initiation",
+          "accessed": "2026-11-04",
+          "supports": "Separate PIS framework"
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "SG",
+      "country": "Singapore",
+      "region": "Asia-Pacific",
+      "languages": [
+        "English",
+        "Mandarin",
+        "Malay",
+        "Tamil"
+      ],
+      "infrastructure": [
+        "PayNow Corporate",
+        "FAST",
+        "UEN",
+        "VPA"
+      ],
+      "ecosystem": "PayNow Corporate links an entity UEN to an account at a participating bank or major payment institution. FAST is underlying funds-transfer infrastructure.",
+      "buyerHypothesis": "B2B collection and SaaS finance teams",
+      "softwareRequirements": "UEN-based collection references and invoice reconciliation",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. UEN-based collection references and invoice reconciliation",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "B2B collection and SaaS finance teams",
+        "Regional SaaS and ERP integration"
+      ],
+      "searchCandidates": [
+        "PayNow Corporate integration",
+        "AI workflow automation Singapore"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Controlled internal knowledge assistants for business operations",
+      "customSoftwareHypothesis": "Regional SaaS and ERP integration",
+      "potentialSolutions": [
+        "UEN-based collection references and invoice reconciliation",
+        "Controlled internal knowledge assistants for business operations",
+        "Regional SaaS and ERP integration"
+      ],
+      "competitorIds": [
+        "ncs",
+        "dbs"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Now",
+      "selectionReason": "Corporate use cases and enterprise-AI readiness guidance are documented",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "PayNow Corporate: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://abs.org.sg/e-payments/pay-now",
+          "title": "Association of Banks in Singapore — PayNow",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        },
+        {
+          "url": "https://www.imda.gov.sg/resources/press-releases-factsheets-and-speeches/factsheets/2026/new-playbook-charts-a-clear-ai-transformation-path-for-local-enterprises",
+          "title": "IMDA — enterprise AI playbook",
+          "accessed": "2026-11-04",
+          "supports": "Readiness, workforce and governance; not Scriza demand"
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "AU",
+      "country": "Australia",
+      "region": "Asia-Pacific",
+      "languages": [
+        "English"
+      ],
+      "infrastructure": [
+        "PayTo",
+        "PayID",
+        "NPP",
+        "PayTo Sponsor"
+      ],
+      "ecosystem": "Businesses access PayTo through a sponsor. Agreement management and payment initiation are distinct parts of the integration.",
+      "buyerHypothesis": "Subscription billing and accounts-receivable teams",
+      "softwareRequirements": "Agreement lifecycle, collection status and exception handling",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Agreement lifecycle, collection status and exception handling",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Subscription billing and accounts-receivable teams",
+        "Subscription platforms and finance operations"
+      ],
+      "searchCandidates": [
+        "PayTo API integration",
+        "PayTo mandate management"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Support knowledge retrieval with approval for consequential actions",
+      "customSoftwareHypothesis": "Subscription platforms and finance operations",
+      "potentialSolutions": [
+        "Agreement lifecycle, collection status and exception handling",
+        "Support knowledge retrieval with approval for consequential actions",
+        "Subscription platforms and finance operations"
+      ],
+      "competitorIds": [
+        "ncs",
+        "zai"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Now",
+      "selectionReason": "Sponsor APIs and a concrete agreement lifecycle support a focused engineering offer",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "PayTo: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.auspayplus.com.au/solutions/payto-for-businesses-access-to-payto",
+          "title": "Australian Payments Plus — PayTo access",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "JP",
+      "country": "Japan",
+      "region": "Asia-Pacific",
+      "languages": [
+        "Japanese",
+        "English"
+      ],
+      "infrastructure": [
+        "全銀システム",
+        "モアタイムシステム",
+        "振込"
+      ],
+      "ecosystem": "Zengin relays domestic credit transfers between participating institutions. More Time extends supported operating hours; participant availability still matters.",
+      "buyerHypothesis": "Enterprise finance integration teams",
+      "softwareRequirements": "Bank-format mapping and transfer/statement integration",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Bank-format mapping and transfer/statement integration",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Enterprise finance integration teams",
+        "Enterprise workflow modernization"
+      ],
+      "searchCandidates": [
+        "全銀システム 連携",
+        "業務自動化 開発"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Japanese document classification and internal knowledge retrieval",
+      "customSoftwareHypothesis": "Enterprise workflow modernization",
+      "potentialSolutions": [
+        "Bank-format mapping and transfer/statement integration",
+        "Japanese document classification and internal knowledge retrieval",
+        "Enterprise workflow modernization"
+      ],
+      "competitorIds": [
+        "brainstation"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Explore",
+      "selectionReason": "Distinct infrastructure and language make this a strategic research market, not an immediate English landing page",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "全銀システム: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.zengin-net.jp/zengin_system/",
+          "title": "Zengin-Net — system overview",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "IN",
+      "country": "India",
+      "region": "South Asia",
+      "languages": [
+        "English",
+        "Hindi and regional languages"
+      ],
+      "infrastructure": [
+        "UPI",
+        "BBPS/Bharat Connect",
+        "B2B payments"
+      ],
+      "ecosystem": "NPCI publishes UPI ecosystem information. Indian terminology remains specific to India; ScrizaPay is company-reported India-market evidence.",
+      "buyerHypothesis": "Billing platforms and payment operations",
+      "softwareRequirements": "Partner-led bill payments, commission and reconciliation workflows",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Partner-led bill payments, commission and reconciliation workflows",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Billing platforms and payment operations",
+        "Operational SaaS and API integration"
+      ],
+      "searchCandidates": [
+        "BBPS platform integration",
+        "UPI reconciliation software"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Multilingual support and document extraction",
+      "customSoftwareHypothesis": "Operational SaaS and API integration",
+      "potentialSolutions": [
+        "Partner-led bill payments, commission and reconciliation workflows",
+        "Multilingual support and document extraction",
+        "Operational SaaS and API integration"
+      ],
+      "competitorIds": [
+        "brainstation"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Maintain India site",
+      "selectionReason": "Existing company-reported product relevance; commercial traffic should be directed to scriza.in",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "UPI: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.npci.org.in/what-we-do/upi/upi-ecosystem-statistics",
+          "title": "NPCI — UPI ecosystem",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        },
+        {
+          "url": "https://www.npci.org.in/uploads/RBI_Governor_unveils_New_Generation_of_Digital_Payment_Initiatives_at_GFF_2025_707cc91c56.pdf",
+          "title": "NPCI — Bharat Connect and banking initiatives",
+          "accessed": "2026-11-04",
+          "supports": "Bharat Connect/BBPS and ERP/collections terminology; not proof of Scriza network membership."
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "BR",
+      "country": "Brazil",
+      "region": "Latin America",
+      "languages": [
+        "Portuguese"
+      ],
+      "infrastructure": [
+        "Pix",
+        "chave Pix",
+        "Open Finance",
+        "iniciação de pagamento"
+      ],
+      "ecosystem": "Banco Central describes Pix initiation through Open Finance and participation by authorized financial/payment institutions.",
+      "buyerHypothesis": "Commerce finance and payment operations teams",
+      "softwareRequirements": "Provider-led payment initiation and reconciliation",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Provider-led payment initiation and reconciliation",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Commerce finance and payment operations teams",
+        "Commerce operations and billing integrations"
+      ],
+      "searchCandidates": [
+        "integração Pix API",
+        "conciliação Pix automática"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Portuguese customer-support triage with human escalation",
+      "customSoftwareHypothesis": "Commerce operations and billing integrations",
+      "potentialSolutions": [
+        "Provider-led payment initiation and reconciliation",
+        "Portuguese customer-support triage with human escalation",
+        "Commerce operations and billing integrations"
+      ],
+      "competitorIds": [
+        "ciandt"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Next",
+      "selectionReason": "Specific local payment primitives; Portuguese review and partner access required",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "Pix: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.bcb.gov.br/meubc/faqs/s/open-finance",
+          "title": "Banco Central do Brasil — Open Finance",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        },
+        {
+          "url": "https://www.bcb.gov.br/meubc/faqs/s/pix",
+          "title": "Banco Central do Brasil — Pix",
+          "accessed": "2026-11-04",
+          "supports": "Local payment vocabulary"
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "MX",
+      "country": "Mexico",
+      "region": "Latin America",
+      "languages": [
+        "Spanish"
+      ],
+      "infrastructure": [
+        "SPEI",
+        "CoDi",
+        "mensaje de cobro",
+        "CEP"
+      ],
+      "ecosystem": "Banco de México describes CoDi collection messages and confirmation. SPEI participation and payment collection are not interchangeable roles.",
+      "buyerHypothesis": "Merchant and B2B finance platforms",
+      "softwareRequirements": "Collection-message integration, payment confirmation and bank reconciliation",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Collection-message integration, payment confirmation and bank reconciliation",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Merchant and B2B finance platforms",
+        "B2B commerce and finance integrations"
+      ],
+      "searchCandidates": [
+        "integración SPEI API",
+        "conciliación de pagos CoDi"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Spanish invoice capture with human validation",
+      "customSoftwareHypothesis": "B2B commerce and finance integrations",
+      "potentialSolutions": [
+        "Collection-message integration, payment confirmation and bank reconciliation",
+        "Spanish invoice capture with human validation",
+        "B2B commerce and finance integrations"
+      ],
+      "competitorIds": [
+        "ciandt"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Next",
+      "selectionReason": "Documented local collections terminology; local buyer and partner validation needed",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "SPEI: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.banxico.org.mx/sistemas-de-pago/codi-avances-banco-mexico.html",
+          "title": "Banco de México — CoDi implementation",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "ZA",
+      "country": "South Africa",
+      "region": "Africa",
+      "languages": [
+        "English and local languages"
+      ],
+      "infrastructure": [
+        "PayShap",
+        "ShapID",
+        "EFT",
+        "Authenticated Collections"
+      ],
+      "ecosystem": "SARB lists PayShap, EFT and Authenticated Collections in its payments-system transition material. Bank-specific access and terms must be checked.",
+      "buyerHypothesis": "Collections and merchant operations teams",
+      "softwareRequirements": "Provider-led collections and status reconciliation",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Provider-led collections and status reconciliation",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Collections and merchant operations teams",
+        "Retail and financial operations software"
+      ],
+      "searchCandidates": [
+        "PayShap integration",
+        "payment reconciliation South Africa"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Document handling and service-desk triage",
+      "customSoftwareHypothesis": "Retail and financial operations software",
+      "potentialSolutions": [
+        "Provider-led collections and status reconciliation",
+        "Document handling and service-desk triage",
+        "Retail and financial operations software"
+      ],
+      "competitorIds": [],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Next",
+      "selectionReason": "Multiple local collection mechanisms warrant differentiated research rather than imported keywords",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "PayShap: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.reservebank.co.za/en/home/what-we-do/payments-and-settlements/psmb",
+          "title": "South African Reserve Bank — payment-system transition",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "NG",
+      "country": "Nigeria",
+      "region": "Africa",
+      "languages": [
+        "English",
+        "Hausa",
+        "Yoruba",
+        "Igbo"
+      ],
+      "infrastructure": [
+        "NIBSS Instant Payment",
+        "NIP",
+        "Name Enquiry",
+        "PSSP"
+      ],
+      "ecosystem": "NIBSS describes NIP APIs for transfers, name enquiry and transaction status. Access is for CBN-licensed institutions; API documentation alone is not eligibility.",
+      "buyerHypothesis": "Licensed payment providers and their software partners",
+      "softwareRequirements": "Name enquiry, status-query fallback and reconciliation",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Name enquiry, status-query fallback and reconciliation",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Licensed payment providers and their software partners",
+        "Collections and merchant operations platforms"
+      ],
+      "searchCandidates": [
+        "NIP integration developer",
+        "NIBSS name enquiry integration"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Operations case triage and support assistants",
+      "customSoftwareHypothesis": "Collections and merchant operations platforms",
+      "potentialSolutions": [
+        "Name enquiry, status-query fallback and reconciliation",
+        "Operations case triage and support assistants",
+        "Collections and merchant operations platforms"
+      ],
+      "competitorIds": [
+        "integrabanking"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Now",
+      "selectionReason": "Source-documented API/status requirements create a concrete engineering research wedge",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "NIBSS Instant Payment: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://nibss-plc.com.ng/nibss-instant-payment/",
+          "title": "NIBSS — NIP",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "KE",
+      "country": "Kenya",
+      "region": "Africa",
+      "languages": [
+        "English",
+        "Kiswahili"
+      ],
+      "infrastructure": [
+        "M-PESA",
+        "Daraja",
+        "B2C",
+        "shortcode"
+      ],
+      "ecosystem": "Safaricom provides Daraja APIs and describes M-PESA ERP integration for disbursement and reconciliation.",
+      "buyerHypothesis": "Merchant, payroll and ERP teams",
+      "softwareRequirements": "Provider onboarding, callbacks and disbursement exception queues",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Provider onboarding, callbacks and disbursement exception queues",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Merchant, payroll and ERP teams",
+        "ERP-to-mobile-money integration"
+      ],
+      "searchCandidates": [
+        "M-PESA Daraja integration",
+        "M-PESA reconciliation ERP"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "English/Kiswahili support routing with reviewed responses",
+      "customSoftwareHypothesis": "ERP-to-mobile-money integration",
+      "potentialSolutions": [
+        "Provider onboarding, callbacks and disbursement exception queues",
+        "English/Kiswahili support routing with reviewed responses",
+        "ERP-to-mobile-money integration"
+      ],
+      "competitorIds": [
+        "nichtech"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Now",
+      "selectionReason": "Concrete developer resources and ERP use cases support a narrow first resource",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "M-PESA: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://daraja.safaricom.co.ke/apis",
+          "title": "Safaricom — Daraja APIs",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        },
+        {
+          "url": "https://www.safaricom.co.ke/images/Downloads/M-PESA-bulk-payment-b2c.pdf",
+          "title": "Safaricom — B2C and ERP integration",
+          "accessed": "2026-11-04",
+          "supports": "Operational disbursement and reconciliation use cases"
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "ID",
+      "country": "Indonesia",
+      "region": "Asia-Pacific",
+      "languages": [
+        "Bahasa Indonesia",
+        "English"
+      ],
+      "infrastructure": [
+        "QRIS",
+        "BI-FAST",
+        "SNAP",
+        "ASPI"
+      ],
+      "ecosystem": "Bank Indonesia defines QRIS and explains SNAP administration by ASPI. A merchant QR standard is not a universal banking-access API.",
+      "buyerHypothesis": "Commerce and payment software teams",
+      "softwareRequirements": "Provider-led QR acceptance, API standard mapping and reconciliation",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Provider-led QR acceptance, API standard mapping and reconciliation",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Commerce and payment software teams",
+        "Merchant operations and commerce integration"
+      ],
+      "searchCandidates": [
+        "integrasi QRIS API",
+        "otomatisasi rekonsiliasi pembayaran"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Bahasa Indonesia document intake and support triage",
+      "customSoftwareHypothesis": "Merchant operations and commerce integration",
+      "potentialSolutions": [
+        "Provider-led QR acceptance, API standard mapping and reconciliation",
+        "Bahasa Indonesia document intake and support triage",
+        "Merchant operations and commerce integration"
+      ],
+      "competitorIds": [],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Next",
+      "selectionReason": "Distinct local acceptance standard and API governance justify focused research",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "QRIS: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.bi.go.id/en/fungsi-utama/sistem-pembayaran/ritel/kanal-layanan/qris/default.aspx",
+          "title": "Bank Indonesia — QRIS",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        },
+        {
+          "url": "https://www.bi.go.id/id/layanan/Standar/SNAP/default.aspx",
+          "title": "Bank Indonesia — SNAP",
+          "accessed": "2026-11-04",
+          "supports": "ASPI administration and national API standard"
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "PH",
+      "country": "Philippines",
+      "region": "Asia-Pacific",
+      "languages": [
+        "English",
+        "Filipino"
+      ],
+      "infrastructure": [
+        "InstaPay",
+        "PESONet",
+        "QR Ph",
+        "Bills Pay Ph"
+      ],
+      "ecosystem": "BSP distinguishes retail payment schemes and lists participating institutions. Limits and business-specific products require a current participant check.",
+      "buyerHypothesis": "Merchant and finance operations platforms",
+      "softwareRequirements": "Bank/e-money partner connectivity and collection reconciliation",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Bank/e-money partner connectivity and collection reconciliation",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Merchant and finance operations platforms",
+        "Services operations and billing platforms"
+      ],
+      "searchCandidates": [
+        "InstaPay integration Philippines",
+        "payment reconciliation software Philippines"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "BPO knowledge retrieval and agent-assist workflows",
+      "customSoftwareHypothesis": "Services operations and billing platforms",
+      "potentialSolutions": [
+        "Bank/e-money partner connectivity and collection reconciliation",
+        "BPO knowledge retrieval and agent-assist workflows",
+        "Services operations and billing platforms"
+      ],
+      "competitorIds": [],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Next",
+      "selectionReason": "English-language source access and distinct scheme semantics; no evidence of demand volume yet",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "InstaPay: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.bsp.gov.ph/Pages/PAYMENTS%20AND%20SETTLEMENTS/National%20Retail%20Payment%20System/Empowering-Every-Juan-and-Maria.aspx",
+          "title": "Bangko Sentral ng Pilipinas — NRPS",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        },
+        {
+          "url": "https://www.bsp.gov.ph/Media_And_Research/Primers%20Faqs/FAQs-QR-Ph-Rebranding.pdf",
+          "title": "BSP — QR Ph naming",
+          "accessed": "2026-11-04",
+          "supports": "Recheck current terminology and scheme distinctions"
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "MY",
+      "country": "Malaysia",
+      "region": "Asia-Pacific",
+      "languages": [
+        "English",
+        "Bahasa Melayu",
+        "Mandarin"
+      ],
+      "infrastructure": [
+        "DuitNow QR",
+        "DuitNow AutoDebit",
+        "FPX",
+        "JomPAY"
+      ],
+      "ecosystem": "PayNet publishes separate APIs for consent-based collections, bank checkout and bill-payment notifications. These are different products, not synonyms.",
+      "buyerHypothesis": "Subscription, biller and merchant platforms",
+      "softwareRequirements": "Consent lifecycle, bank checkout and biller notifications",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Consent lifecycle, bank checkout and biller notifications",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Subscription, biller and merchant platforms",
+        "Billing and ERP connectors"
+      ],
+      "searchCandidates": [
+        "DuitNow AutoDebit integration",
+        "JomPAY biller integration"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Multilingual document routing and review",
+      "customSoftwareHypothesis": "Billing and ERP connectors",
+      "potentialSolutions": [
+        "Consent lifecycle, bank checkout and biller notifications",
+        "Multilingual document routing and review",
+        "Billing and ERP connectors"
+      ],
+      "competitorIds": [],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Next",
+      "selectionReason": "Documented product-specific APIs support a differentiated integration guide",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "DuitNow QR: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://docs.developer.paynet.my/API-reference",
+          "title": "PayNet — API reference",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    },
+    {
+      "code": "BD",
+      "country": "Bangladesh",
+      "region": "South Asia",
+      "languages": [
+        "Bangla",
+        "English"
+      ],
+      "infrastructure": [
+        "Bangla QR",
+        "NPSB",
+        "BEFTN",
+        "MFS"
+      ],
+      "ecosystem": "Bangladesh Bank documents interoperable Bangla QR and dispute handling across participating licensed entities.",
+      "buyerHypothesis": "Merchant acquirers and enterprise payment operations",
+      "softwareRequirements": "Merchant dispute queues, payment status and payroll-file workflows",
+      "bankingIntegrationRequirements": "Confirm the bank/PSP, eligible account type, credentials, sandbox, certification and support responsibilities. Merchant dispute queues, payment status and payroll-file workflows",
+      "regulatoryReview": "Review local payment-activity authorization, AML/KYC responsibilities, privacy, outsourcing and cross-border data handling with the client and its authorized provider. This record is not a legal determination.",
+      "businessModelCandidates": [
+        "Merchant acquirers and enterprise payment operations",
+        "SME operations and financial workflow systems"
+      ],
+      "searchCandidates": [
+        "Bangla QR integration",
+        "BEFTN payroll integration"
+      ],
+      "searchIntent": "Implementation / evaluation hypothesis; not verified query demand",
+      "searchEvidence": "Source vocabulary verified; keyword phrasing is a research seed. Native-speaker and Search Console validation pending.",
+      "searchVolume": null,
+      "competitionLevel": null,
+      "marketSize": null,
+      "commercialOpportunity": "Unknown: no observed Scriza country-level enquiries, purchasing data or conversion baseline.",
+      "aiOpportunityHypothesis": "Bangla document extraction with human validation",
+      "customSoftwareHypothesis": "SME operations and financial workflow systems",
+      "potentialSolutions": [
+        "Merchant dispute queues, payment status and payroll-file workflows",
+        "Bangla document extraction with human validation",
+        "SME operations and financial workflow systems"
+      ],
+      "competitorIds": [
+        "brainstation"
+      ],
+      "competitiveGapHypothesis": "Test demand for a bounded integration plus operational exception handling. Not evidence that competitors lack it.",
+      "priority": "Explore",
+      "selectionReason": "Current local dispute guidance suggests a specific operational research topic; procurement remains unvalidated",
+      "opportunityClasses": {
+        "A": "Commercial-intent candidate, inferred from integration-specific task",
+        "B": "Unknown — search volume not measured",
+        "C": "Unknown — local SERP competition not measured",
+        "D": "Infrastructure-change / digitization hypothesis; validate local procurement",
+        "E": "Evidence-led engineering authority and partner research"
+      },
+      "confidence": {
+        "infrastructure": "High: primary operator/regulator source",
+        "softwareDemand": "Low: hypothesis",
+        "searchDemand": "Unknown",
+        "opportunity": "Provisional"
+      },
+      "contentOpportunity": "Bangla QR: access route, integration boundaries and exception handling",
+      "sources": [
+        {
+          "url": "https://www.bb.org.bd/mediaroom/circulars/psd-2/sep272026psd-205.pdf",
+          "title": "Bangladesh Bank — Bangla QR disputes",
+          "accessed": "2026-11-04",
+          "supports": "Infrastructure names and described access/use-case boundaries; does not establish Scriza delivery history, demand or legal advice."
+        }
+      ],
+      "reviewedAt": "2026-11-04"
+    }
+  ],
+  "competitors": [
+    {
+      "id": "10pearls",
+      "name": "10Pearls",
+      "markets": [
+        "US",
+        "CA",
+        "GB"
+      ],
+      "category": "Engineering services",
+      "url": "https://10pearls.com/industry-financial-services/",
+      "observed": "Publishes fintech, AI, lending and integration services.",
+      "response": "Avoid broad capability claims; demonstrate a small, testable integration deliverable."
+    },
+    {
+      "id": "ncs",
+      "name": "NCS",
+      "markets": [
+        "SG",
+        "AU"
+      ],
+      "category": "Engineering and systems integration",
+      "url": "https://www.ncs.co/en-au/insights/transforming-compliance-controls-with-ai-in-financial-services/",
+      "observed": "Publishes an AI controls-assessment implementation with human validation.",
+      "response": "Publish evaluation methods and review workflows; do not compete on unsupported compliance guarantees."
+    },
+    {
+      "id": "ciandt",
+      "name": "CI&T",
+      "markets": [
+        "BR",
+        "MX",
+        "US"
+      ],
+      "category": "Digital engineering",
+      "url": "https://ciandt.com/us/en-us/industries/financial-services",
+      "observed": "Publishes banking, lending, data and AI engineering offers and case studies.",
+      "response": "Show inspectable reference code and a bounded architecture workshop."
+    },
+    {
+      "id": "raqmiyat",
+      "name": "Raqmiyat",
+      "markets": [
+        "AE",
+        "SA"
+      ],
+      "category": "Regional systems integration",
+      "url": "https://raqmiyat.com/open-connect/",
+      "observed": "Publishes UAE-specific open-finance platform capabilities.",
+      "response": "Do not claim local accreditation; offer implementation around the buyer’s licensed provider."
+    },
+    {
+      "id": "brainstation",
+      "name": "Brain Station 23",
+      "markets": [
+        "BD",
+        "JP",
+        "DE",
+        "FR",
+        "IN"
+      ],
+      "category": "Engineering services comparison candidate",
+      "url": "https://brainstation-23.com/ai-dlc/",
+      "observed": "Publishes AI-assisted enterprise software delivery and governance.",
+      "response": "Validate local coverage in each market before treating it as a local competitor."
+    },
+    {
+      "id": "jj4tech",
+      "name": "JJ4Tech",
+      "markets": [
+        "US"
+      ],
+      "category": "Technology provider / adjacent platform",
+      "url": "https://www.frbservices.org/financial-services/fednow-service/innovator-exchanges/jj4tech/",
+      "observed": "Listed in the FedNow Innovator Exchange with a connectivity/platform offer.",
+      "response": "Differentiate application integration and operational tooling; do not imply equivalent network credentials."
+    },
+    {
+      "id": "natwest",
+      "name": "NatWest Bankline Direct APIs",
+      "markets": [
+        "GB"
+      ],
+      "category": "Bank API / substitute",
+      "url": "https://www.natwest.com/corporates/everyday-banking/bankline-direct/bankline-direct-apis/financial-institutions.html",
+      "observed": "Publishes API-based access to payment schemes for eligible financial institutions.",
+      "response": "Clarify what the bank supplies before offering custom implementation."
+    },
+    {
+      "id": "zai",
+      "name": "Zai",
+      "markets": [
+        "AU"
+      ],
+      "category": "Payment API provider / substitute",
+      "url": "https://developer.hellozai.com/docs/get-started-with-payto-apis",
+      "observed": "Publishes Australian PayTo agreement and initiation documentation.",
+      "response": "Offer sponsor-aware workflow and ERP integration, not generic payment access."
+    },
+    {
+      "id": "nichtech",
+      "name": "NICHTECH",
+      "markets": [
+        "KE"
+      ],
+      "category": "Local integration services",
+      "url": "https://integrations.co.ke/mpesa-integration",
+      "observed": "Publishes M-PESA integration and ERP reconciliation services in Kenya.",
+      "response": "Do not claim an empty market; demonstrate tested exception handling and a clear support boundary."
+    },
+    {
+      "id": "integrabanking",
+      "name": "Integra banking platform",
+      "markets": [
+        "NG"
+      ],
+      "category": "Banking platform / adjacent substitute",
+      "url": "https://www.integrabanking.ng/integrations/",
+      "observed": "Publishes NIBSS NIP integration as part of a banking platform.",
+      "response": "Validate build-versus-buy and existing platform capabilities before proposing a connector."
+    },
+    {
+      "id": "shyphan",
+      "name": "Shyphan",
+      "markets": [
+        "AE"
+      ],
+      "category": "Local AI automation services",
+      "url": "https://www.shyphan.com/ai-solutions-for-logistics-dubai.html",
+      "observed": "Publishes a UAE logistics AI offer around documents and operational workflows.",
+      "response": "Compete on a bounded pilot, measurable review effort and transparent data boundaries."
+    },
+    {
+      "id": "dbs",
+      "name": "DBS PayNow Corporate",
+      "markets": [
+        "SG"
+      ],
+      "category": "Bank payment product / substitute",
+      "url": "https://www.dbs.com.sg/corporate/solutions/cash-management/paynow-corporate",
+      "observed": "Publishes corporate PayNow business payment services.",
+      "response": "Separate bank-product onboarding from bespoke ERP and reconciliation work."
+    }
+  ],
+  "competitorCaveat": "Examples and substitutes, not market-share leaders. Country assignments are research comparison sets, not proof of local dominance, offices or procurement wins. Competitor statements are self-published, not independently audited."
+}

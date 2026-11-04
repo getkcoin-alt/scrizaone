@@ -1,0 +1,10 @@
+period_start,period_end,country,service,metric,value,unit,source,confidence,notes
+2026-11-04,2026-11-04,ALL,ALL,organic_clicks,,count,Search Console,unknown,Not connected
+2026-11-04,2026-11-04,ALL,ALL,organic_impressions,,count,Search Console,unknown,Not connected
+2026-11-04,2026-11-04,ALL,ALL,non_branded_clicks,,count,Search Console,unknown,Query exclusion filter and coverage required
+2026-11-04,2026-11-04,ALL,ALL,observed_ai_referral_sessions,,count,GA4,unknown,Consent and property required; not citation count
+2026-11-04,2026-11-04,ALL,ALL,verified_ai_mentions,,count,Manual observation log,unknown,Record platform prompt locale date and citation
+2026-11-04,2026-11-04,ALL,ALL,referring_domains,,count,Search Console links export,unknown,Deduplicate domains; not all links observable
+2026-11-04,2026-11-04,ALL,ALL,brand_query_clicks,,count,Search Console,unknown,Document variant filter
+2026-11-04,2026-11-04,ALL,ALL,qualified_international_enquiries,,count,Sales CRM,unknown,Received and human-qualified only
+2026-11-04,2026-11-04,ALL,ALL,organic_attributed_revenue,,original_currency,Sales CRM,unknown,Currency and attribution window required

@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "check:research": "node scripts/research-check.mjs",
+    "test": "node --test scripts/readiness.test.mjs public/resources/payment-events.test.mjs",
+    "audit:growth": "node scripts/growth-audit.mjs"
   },
   "dependencies": {
     "@fontsource-variable/dm-sans": "^5.3.0",
