@@ -2,6 +2,7 @@ import Link from "next/link";
 import { company, services } from "@/lib/site";
 import { localeList, locales } from "@/lib/locales";
 import LocaleBanner from "./LocaleBanner";
+import Brand from "./Brand";
 
 function href(locale, sub = "") {
   const base = locales[locale]?.path || "";
@@ -17,9 +18,9 @@ export default function Shell({ locale = "global", children }) {
       <header className="site-header">
         <div className="wrap header-row">
           <Link href={href(locale)} className="logo" aria-label="ScrizaOne home">
-            Scriza<span>One</span>
+            <Brand />
           </Link>
-          <nav aria-label="Main">
+          <nav aria-label="Main" className="desktop-nav">
             <ul className="nav">
               {services.map((s) => (
                 <li key={s.slug}><Link href={href(locale, `/services/${s.slug}`)}>{s.nav}</Link></li>
@@ -28,13 +29,21 @@ export default function Shell({ locale = "global", children }) {
               <li><Link href="/contact" className="btn btn-sm">Contact</Link></li>
             </ul>
           </nav>
+          <details className="mobile-menu">
+            <summary aria-label="Open navigation"><span /><span /></summary>
+            <nav aria-label="Mobile">
+              {services.map((s) => <Link key={s.slug} href={href(locale, `/services/${s.slug}`)}>{s.nav}<span aria-hidden="true">↗</span></Link>)}
+              <Link href="/working-with-us">Working with us<span aria-hidden="true">↗</span></Link>
+              <Link href="/contact">Contact<span aria-hidden="true">↗</span></Link>
+            </nav>
+          </details>
         </div>
       </header>
       <main id="main">{children}</main>
       <footer className="site-footer">
         <div className="wrap footer-grid">
           <div>
-            <p className="logo">Scriza<span>One</span></p>
+            <Link href={href(locale)} className="logo" aria-label="ScrizaOne home"><Brand /></Link>
             <p className="muted">
               ScrizaOne is the international website of {company.legalName}, a software engineering company
               headquartered in {company.hq.city}, {company.hq.countryName}.

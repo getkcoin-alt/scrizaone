@@ -1,4 +1,6 @@
 import "./globals.css";
+import "@fontsource-variable/manrope";
+import "@fontsource-variable/dm-sans";
 import { SITE_URL, company } from "@/lib/site";
 
 export const metadata = {
@@ -15,7 +17,7 @@ export const metadata = {
   formatDetection: { telephone: false },
 };
 
-export const viewport = { themeColor: "#071A61" };
+export const viewport = { themeColor: "#0A1016" };
 
 // Same legal entity and @id as scriza.in (strategy §5.2, rule 4).
 const organization = {

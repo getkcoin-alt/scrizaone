@@ -2,6 +2,7 @@ import Link from "next/link";
 import { company, services } from "@/lib/site";
 import { locales } from "@/lib/locales";
 import { serviceContent } from "@/lib/service-content";
+import HeroArtwork from "./HeroArtwork";
 
 const p = (locale, sub = "") => `${locales[locale].path}${sub}` || "/";
 
@@ -59,10 +60,12 @@ export function HomeView({ locale }) {
   const where = locale === "global" ? "worldwide" : `in ${l.region}`;
   return (
     <>
-      <section className="hero">
-        <div className="wrap">
+      <section className="hero home-hero">
+        <div className="hero-grid" aria-hidden="true" />
+        <div className="wrap hero-layout">
+          <div className="hero-copy">
           <p className="eyebrow">Software engineering partner · {l.name}</p>
-          <h1>Fintech, AI and custom software engineering for companies {where}</h1>
+          <h1><span>Fintech, AI</span> and custom software engineering for companies {where}</h1>
           <p className="lede">
             ScrizaOne is the international team of {company.legalName}. We build payment integrations and payments platforms,
             AI agents and automation, and custom software and SaaS, with working hours that overlap yours.
@@ -72,15 +75,19 @@ export function HomeView({ locale }) {
             <Link className="btn btn-ghost" href={p(locale, "/services/fintech")}>Fintech engineering</Link>
           </div>
           <p className="small muted">{l.overlap}</p>
+          </div>
+          <HeroArtwork />
         </div>
+        <div className="wrap hero-foot" aria-hidden="true"><span>01 / SCRIZAONE</span><span>{l.name} · {l.currency.code}<span className="foot-arrow">↓</span></span></div>
       </section>
 
-      <section className="section" aria-labelledby="svc-h">
+      <section className="section services-section" aria-labelledby="svc-h">
         <div className="wrap">
           <h2 id="svc-h">What we build</h2>
           <div className="grid-3">
-            {services.map((s) => (
+            {services.map((s, index) => (
               <Link key={s.slug} href={p(locale, `/services/${s.slug}`)} className={`card link-card${s.lead ? " lead" : ""}`}>
+                <div className="service-card-top" aria-hidden="true"><span>0{index + 1}</span><span>↗</span></div>
                 {s.lead && <span className="tag">Core expertise</span>}
                 <h3>{s.name}</h3>
                 <p>{s.short}</p>
@@ -93,7 +100,7 @@ export function HomeView({ locale }) {
 
       <RegionPanel locale={locale} />
 
-      <section className="section" aria-labelledby="trust-h">
+      <section className="section trust-section" aria-labelledby="trust-h">
         <div className="wrap">
           <h2 id="trust-h">Who you would be working with</h2>
           <div className="grid-3">
