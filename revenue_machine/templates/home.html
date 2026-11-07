@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scriza — Autonomous Technical &amp; Revenue Diagnostic Engine</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  body { font-family: 'Plus Jakarta Sans', sans-serif; }
+  .glow-blue { box-shadow: 0 0 50px -10px rgba(37, 99, 235, 0.25); }
+</style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-blue-600 selection:text-white">
+
+  <!-- Header -->
+  <header class="border-b border-slate-800/80 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center font-extrabold text-white text-lg tracking-wider">S</div>
+        <div>
+          <span class="font-extrabold text-lg tracking-tight text-white">SCRIZA</span>
+          <span class="text-xs text-blue-400 block font-semibold tracking-wider uppercase -mt-1">Autonomous Revenue Engine</span>
+        </div>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <span class="hidden sm:inline-flex items-center gap-1.5 bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-3 py-1 rounded-full">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          24/7 Autonomous Diagnostic Core Active
+        </span>
+        <a href="/admin" class="bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 px-3.5 py-1.5 rounded-lg transition">Operator Dashboard</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <main class="max-w-5xl mx-auto px-6 py-16 flex-1 flex flex-col justify-center">
+    <div class="text-center max-w-3xl mx-auto mb-10">
+      <div class="inline-flex items-center gap-2 bg-blue-500/10 border border-blue-500/30 text-blue-400 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full mb-6">
+        <span>⚡ 100-Point Autonomous Engineering Diagnostic</span>
+      </div>
+      <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+        Discover Why Your Website <br class="hidden sm:block">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-300 to-emerald-400">Leaks Revenue While You Sleep</span>
+      </h1>
+      <p class="text-slate-400 text-base sm:text-lg leading-relaxed">
+        Run real-time diagnostics on server latency (TTFB), Google canonical cannibalization, AI search exclusion (/llms.txt), and mobile conversion drops in under 30 seconds.
+      </p>
+    </div>
+
+    <!-- Audit Input Box -->
+    <div class="bg-slate-900/90 border border-slate-800 rounded-2xl p-6 sm:p-8 glow-blue max-w-2xl mx-auto w-full relative overflow-hidden">
+      <form id="auditForm" onsubmit="runInstantAudit(event)" class="space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Target Website or Domain</label>
+          <div class="relative">
+            <span class="absolute inset-y-0 left-0 pl-4 flex items-center text-slate-500 font-mono text-sm">https://</span>
+            <input type="text" id="targetUrl" required placeholder="example.com" 
+              class="w-full pl-24 pr-4 py-3.5 bg-slate-950 border border-slate-700 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 text-sm font-medium transition" />
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">Company Name (Optional)</label>
+            <input type="text" id="companyName" placeholder="Acme Corp" 
+              class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 text-sm font-medium transition" />
+          </div>
+          <div>
+            <label class="block text-xs font-bold text-slate-300 uppercase tracking-wider mb-2">WhatsApp or Phone (Optional)</label>
+            <input type="tel" id="contactPhone" placeholder="+91 98765 43210" 
+              class="w-full px-4 py-3 bg-slate-950 border border-slate-700 rounded-xl text-white placeholder-slate-600 focus:outline-none focus:border-blue-500 text-sm font-medium transition" />
+          </div>
+        </div>
+
+        <button type="submit" id="submitBtn" 
+          class="w-full mt-2 bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-bold py-4 rounded-xl shadow-lg shadow-blue-600/30 transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2 text-base">
+          <span>Inspect Website &amp; Generate Boardroom Audit</span>
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </button>
+      </form>
+
+      <!-- Scanning Progress Simulation / Live Feedback -->
+      <div id="scanConsole" class="hidden mt-6 bg-slate-950 border border-slate-800 rounded-xl p-4 font-mono text-xs">
+        <div class="flex items-center justify-between text-slate-400 mb-2 border-b border-slate-800 pb-2">
+          <span class="flex items-center gap-2 text-blue-400 font-bold">
+            <span class="w-2 h-2 rounded-full bg-blue-500 animate-ping"></span>
+            AUTONOMOUS PROBE RUNNING
+          </span>
+          <span id="scanPercent">15%</span>
+        </div>
+        <div class="space-y-1 text-slate-300" id="scanLogs">
+          <div class="text-slate-500">&gt; Establishing TLS handshake &amp; TTFB probe...</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Verified Trust Marks -->
+    <div class="mt-14 pt-8 border-t border-slate-900 grid grid-cols-2 md:grid-cols-4 gap-6 text-center text-slate-400 text-xs">
+      <div>
+        <div class="text-white font-bold text-sm">Sub-200ms TTFB</div>
+        <div class="text-slate-500 mt-0.5">Benchmarked Latency</div>
+      </div>
+      <div>
+        <div class="text-white font-bold text-sm">AEO / GEO Verified</div>
+        <div class="text-slate-500 mt-0.5">Perplexity &amp; ChatGPT Crawlers</div>
+      </div>
+      <div>
+        <div class="text-white font-bold text-sm">ISO 9001 &amp; 27001</div>
+        <div class="text-slate-500 mt-0.5">Certified Security &amp; QA</div>
+      </div>
+      <div>
+        <div class="text-white font-bold text-sm">Turnkey Sprints</div>
+        <div class="text-slate-500 mt-0.5">7 to 14 Days Delivery</div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 py-6 text-center text-xs text-slate-600">
+    <p>Scriza Private Limited (CIN: U72900RJ2021PTC076840) • Engineering Remote Architecture Hub, Udaipur, Rajasthan, India</p>
+  </footer>
+
+  <script>
+    async function runInstantAudit(e) {
+      e.preventDefault();
+      const rawUrl = document.getElementById('targetUrl').value.trim();
+      const company = document.getElementById('companyName').value.trim();
+      const phone = document.getElementById('contactPhone').value.trim();
+      
+      const submitBtn = document.getElementById('submitBtn');
+      const scanConsole = document.getElementById('scanConsole');
+      const scanLogs = document.getElementById('scanLogs');
+      const scanPercent = document.getElementById('scanPercent');
+
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-50', 'cursor-not-allowed');
+      scanConsole.classList.remove('hidden');
+
+      const steps = [
+        { p: "30%", text: "> Probing server response latency (TTFB)..." },
+        { p: "55%", text: "> Parsing canonical tags, metadata & robots.txt..." },
+        { p: "75%", text: "> Checking /llms.txt manifest & PerplexityBot access..." },
+        { p: "90%", text: "> Calculating monthly revenue leak & compiling PDF..." }
+      ];
+
+      let idx = 0;
+      const interval = setInterval(() => {
+        if (idx < steps.length) {
+          scanPercent.innerText = steps[idx].p;
+          const line = document.createElement('div');
+          line.className = "text-slate-300";
+          line.innerText = steps[idx].text;
+          scanLogs.appendChild(line);
+          idx++;
+        }
+      }, 700);
+
+      try {
+        const res = await fetch('/api/audit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            url: rawUrl,
+            company_name: company,
+            contact_phone: phone,
+            source: 'inbound_web'
+          })
+        });
+        const data = await res.json();
+        clearInterval(interval);
+        if (data.redirect_url) {
+          scanPercent.innerText = "100%";
+          window.location.href = data.redirect_url;
+        } else {
+          alert('Diagnostic error: ' + (data.detail || 'Could not audit URL'));
+          submitBtn.disabled = false;
+          submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+        }
+      } catch (err) {
+        clearInterval(interval);
+        alert('Inspection failed: ' + err.message);
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+      }
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ domain }} — Diagnostic Scorecard &amp; Turnkey Solution | Scriza</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>body { font-family: 'Plus Jakarta Sans', sans-serif; }</style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between">
+
+  <!-- Header -->
+  <header class="border-b border-slate-800/80 bg-slate-900/50 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 h-18 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center font-extrabold text-white text-lg">S</div>
+        <div>
+          <span class="font-extrabold text-lg text-white">SCRIZA</span>
+          <span class="text-xs text-blue-400 block font-semibold uppercase -mt-1">Verified Audit Engine</span>
+        </div>
+      </a>
+      <div class="flex items-center gap-3">
+        <a href="/api/audit/{{ audit_token }}/pdf" target="_blank" 
+          class="bg-blue-600/10 hover:bg-blue-600/20 text-blue-400 border border-blue-500/30 text-xs font-bold px-4 py-2 rounded-lg flex items-center gap-2 transition">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"/></svg>
+          Download Official PDF Report
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Diagnostic Body -->
+  <main class="max-w-6xl mx-auto px-6 py-12 flex-1 w-full space-y-12">
+    
+    <!-- Top Score Banner -->
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-8">
+      <div>
+        <div class="inline-flex items-center gap-2 text-xs font-bold text-slate-400 uppercase tracking-widest mb-2">
+          <span>Target Inspection Domain</span>
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-white">
+          {% if audit.company_name and audit.company_name != domain %}{{ audit.company_name }} <span class="text-slate-500 text-2xl font-normal">({{ domain }})</span>{% else %}{{ domain }}{% endif %}
+        </h1>
+        <p class="text-slate-400 text-sm mt-2 max-w-xl">
+          Automated analysis reveals significant bottlenecks affecting Google mobile indexing, AI engine citation, and inbound buyer conversion.
+        </p>
+      </div>
+
+      <div class="flex items-center gap-6">
+        <div class="text-center px-6 py-4 bg-slate-950 border border-slate-800 rounded-xl">
+          <div class="text-4xl font-extrabold {% if score >= 80 %}text-emerald-400{% elif score >= 60 %}text-amber-400{% else %}text-red-500{% endif %}">
+            {{ score }}<span class="text-lg text-slate-500">/100</span>
+          </div>
+          <div class="text-[11px] font-bold text-slate-400 uppercase tracking-wider mt-1">Health Grade: {{ grade }}</div>
+        </div>
+        <div class="text-center px-6 py-4 bg-red-950/40 border border-red-900/40 rounded-xl">
+          <div class="text-3xl font-extrabold text-red-400">₹{{ "{:,}".format(leak_inr) }}</div>
+          <div class="text-[11px] font-bold text-red-300 uppercase tracking-wider mt-1">Est. Monthly Leak</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Five Pillar Scorecards -->
+    <div class="grid grid-cols-2 sm:grid-cols-5 gap-4">
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 text-center">
+        <div class="text-xl font-extrabold text-blue-400">{{ audit.perf_score }}/25</div>
+        <div class="text-xs font-bold text-slate-300 mt-1">Performance</div>
+        <div class="text-[10px] text-slate-500 mt-1">TTFB: {{ ttfb }}ms</div>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 text-center">
+        <div class="text-xl font-extrabold text-emerald-400">{{ audit.seo_score }}/25</div>
+        <div class="text-xs font-bold text-slate-300 mt-1">Technical SEO</div>
+        <div class="text-[10px] text-slate-500 mt-1">Canonical &amp; Meta</div>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 text-center">
+        <div class="text-xl font-extrabold text-purple-400">{{ audit.aeo_score }}/20</div>
+        <div class="text-xs font-bold text-slate-300 mt-1">AEO / AI Search</div>
+        <div class="text-[10px] text-slate-500 mt-1">{% if audit.has_llms_txt %}/llms.txt Active{% else %}No /llms.txt{% endif %}</div>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 text-center">
+        <div class="text-xl font-extrabold text-amber-400">{{ audit.sec_score }}/15</div>
+        <div class="text-xs font-bold text-slate-300 mt-1">Security Headers</div>
+        <div class="text-[10px] text-slate-500 mt-1">HSTS &amp; CSP</div>
+      </div>
+      <div class="bg-slate-900 border border-slate-800 rounded-xl p-4 text-center col-span-2 sm:col-span-1">
+        <div class="text-xl font-extrabold text-pink-400">{{ audit.ux_score }}/15</div>
+        <div class="text-xs font-bold text-slate-300 mt-1">Conversion UX</div>
+        <div class="text-[10px] text-slate-500 mt-1">WhatsApp &amp; Forms</div>
+      </div>
+    </div>
+
+    <!-- Detected Flaws -->
+    <div>
+      <h2 class="text-xl font-bold text-white mb-4 flex items-center gap-2">
+        <span>Priority Identified Flaws</span>
+        <span class="text-xs bg-red-500/10 text-red-400 border border-red-500/20 px-2.5 py-0.5 rounded-full font-bold">{{ flaws|length }} Vulnerabilities</span>
+      </h2>
+      <div class="space-y-4">
+        {% for f in flaws %}
+        <div class="bg-slate-900/90 border border-slate-800 rounded-xl p-5 border-l-4 {% if f.severity == 'CRITICAL' %}border-l-red-500{% elif f.severity == 'HIGH' %}border-l-amber-500{% else %}border-l-blue-500{% endif %}">
+          <div class="flex items-center justify-between gap-4 mb-2">
+            <h4 class="font-bold text-white text-sm">#{{ loop.index }}. {{ f.title }}</h4>
+            <span class="text-[10px] font-extrabold uppercase px-2.5 py-0.5 rounded {% if f.severity == 'CRITICAL' %}bg-red-500/10 text-red-400 border border-red-500/20{% elif f.severity == 'HIGH' %}bg-amber-500/10 text-amber-400 border border-amber-500/20{% else %}bg-blue-500/10 text-blue-400 border border-blue-500/20{% endif %}">
+              {{ f.severity }}
+            </span>
+          </div>
+          <p class="text-xs text-slate-400 mb-2 leading-relaxed"><strong class="text-slate-300">Revenue Impact:</strong> {{ f.impact }}</p>
+          <p class="text-xs text-blue-400 font-mono"><strong class="text-slate-300 font-sans">Engineering Fix:</strong> {{ f.fix }}</p>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+
+    <!-- Turnkey Solutions & Automated Payment Section -->
+    <div id="remediation" class="bg-slate-900 border border-blue-500/40 rounded-2xl p-6 sm:p-10 relative overflow-hidden shadow-2xl">
+      <div class="max-w-2xl mb-8">
+        <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">Turnkey Resolution Packages</span>
+        <h3 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Lock Engineering Sprint &amp; Eliminate Leakage</h3>
+        <p class="text-slate-400 text-sm mt-2">
+          Reserve your engineering slot with a token deposit or choose a full turnkey sprint delivered by Scriza's senior engineering team.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+        <!-- Deposit Option -->
+        <div class="bg-slate-950 border-2 border-blue-600 rounded-xl p-6 flex flex-col justify-between relative shadow-lg shadow-blue-600/10">
+          <div class="absolute -top-3 right-4 bg-blue-600 text-white text-[10px] font-extrabold uppercase px-3 py-0.5 rounded-full">POPULAR CHOICE</div>
+          <div>
+            <h4 class="font-bold text-white text-base">Blueprint &amp; Queue Lock</h4>
+            <div class="text-2xl font-extrabold text-white my-3">₹2,999 <span class="text-xs font-normal text-slate-400">($39 USD)</span></div>
+            <p class="text-xs text-slate-400 mb-4">Instant 25-page developer remediation blueprint + 100% credit toward any full engineering sprint.</p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-6">
+              <li class="flex items-center gap-2">✓ Full line-by-line developer spec</li>
+              <li class="flex items-center gap-2">✓ Ready-to-paste Next.js / Nginx code</li>
+              <li class="flex items-center gap-2">✓ 30-min strategy call with Senior Architect</li>
+            </ul>
+          </div>
+          <button onclick="openCheckoutModal('DEPOSIT', 2999, 'Audit Blueprint & Queue Lock')" 
+            class="w-full bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold py-3 rounded-lg transition text-center">
+            Pay ₹2,999 to Reserve Slot
+          </button>
+        </div>
+
+        <!-- 7-Day Sprint -->
+        <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-white text-base">7-Day Turnkey Sprint</h4>
+            <div class="text-2xl font-extrabold text-white my-3">₹24,000 <span class="text-xs font-normal text-slate-400">+ GST ($299)</span></div>
+            <p class="text-xs text-slate-400 mb-4">Done-for-you resolution of all identified speed, canonical, AEO, and security vulnerabilities.</p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-6">
+              <li class="flex items-center gap-2">✓ Sub-400ms TTFB speed overhaul</li>
+              <li class="flex items-center gap-2">✓ Fix all canonical and metadata bugs</li>
+              <li class="flex items-center gap-2">✓ Deploy /llms.txt &amp; JSON-LD schema</li>
+              <li class="flex items-center gap-2">✓ Automated WhatsApp lead capture</li>
+            </ul>
+          </div>
+          <button onclick="openCheckoutModal('SPRINT_REMEDIATION', 24000, '7-Day Turnkey Remediation Sprint')" 
+            class="w-full bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold py-3 rounded-lg border border-slate-700 transition text-center">
+            Pay ₹24,000 for Turnkey Sprint
+          </button>
+        </div>
+
+        <!-- 14-Day Rebuild -->
+        <div class="bg-slate-950 border border-slate-800 rounded-xl p-6 flex flex-col justify-between">
+          <div>
+            <h4 class="font-bold text-white text-base">Full Next.js Re-Architecture</h4>
+            <div class="text-2xl font-extrabold text-white my-3">₹58,000 <span class="text-xs font-normal text-slate-400">+ GST ($699)</span></div>
+            <p class="text-xs text-slate-400 mb-4">Complete modernization to Next.js 15 App Router, Tailwind, and integrated WhatsApp CRM.</p>
+            <ul class="text-xs text-slate-300 space-y-2 mb-6">
+              <li class="flex items-center gap-2">✓ 100/100 Core Web Vitals</li>
+              <li class="flex items-center gap-2">✓ Scriwo/WppFlow WhatsApp shared inbox</li>
+              <li class="flex items-center gap-2">✓ Dynamic quote/proposal calculator</li>
+              <li class="flex items-center gap-2">✓ 30 days post-launch warranty</li>
+            </ul>
+          </div>
+          <button onclick="openCheckoutModal('PLATFORM_REBUILD', 58000, 'Full Next.js Modernization')" 
+            class="w-full bg-slate-800 hover:bg-slate-700 text-white text-xs font-bold py-3 rounded-lg border border-slate-700 transition text-center">
+            Pay ₹58,000 for Modern Rebuild
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-slate-950/80 border border-slate-800 rounded-xl p-4 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-4">
+        <div>
+          <span class="text-white font-bold">Official Statutory Credentials:</span>
+          <span>Scriza Private Limited (CIN: U72900RJ2021PTC076840) • ISO 9001:2015 &amp; ISO/IEC 27001:2022 Certified</span>
+        </div>
+        <div class="text-blue-400 font-semibold whitespace-nowrap">
+          Bank: ICICI Corporate Banking • UPI: scriza@icici
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Checkout Modal -->
+  <div id="checkoutModal" class="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-slate-900 border border-slate-800 rounded-2xl max-w-md w-full p-6 text-center relative shadow-2xl">
+      <button onclick="closeCheckoutModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white">✕</button>
+      
+      <div class="w-12 h-12 rounded-full bg-blue-600/20 text-blue-400 mx-auto flex items-center justify-center mb-3">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+      </div>
+
+      <h3 id="modalPackageTitle" class="text-lg font-bold text-white mb-1">Instant Activation</h3>
+      <div id="modalAmount" class="text-3xl font-extrabold text-emerald-400 mb-4">₹2,999</div>
+
+      <!-- UPI QR Code -->
+      <div class="bg-white p-4 rounded-xl inline-block mb-4 shadow-inner">
+        <img id="modalQrImg" src="{{ proposal.upi_qr_base64 }}" alt="Scan UPI QR" class="w-48 h-48 mx-auto" />
+      </div>
+
+      <p class="text-xs text-slate-300 font-semibold mb-1">Scan with GPay, PhonePe, Paytm, or any UPI App</p>
+      <p class="text-[11px] text-slate-500 mb-4">UPI VPA: <strong class="text-slate-300">scriza@icici</strong> • Ref: <span id="modalOrderRef" class="text-blue-400 font-mono">{{ proposal.order_id }}</span></p>
+
+      <div class="space-y-3">
+        <a id="modalDeepLink" href="{{ proposal.upi_uri }}" 
+          class="sm:hidden block w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold py-3 rounded-xl text-xs transition">
+          Tap to Pay with Installed UPI App
+        </a>
+        <div class="border-t border-slate-800 pt-3">
+          <label class="block text-left text-[11px] font-bold text-slate-400 mb-1">After completing payment, enter UPI UTR / Ref No:</label>
+          <div class="flex gap-2">
+            <input type="text" id="utrInput" placeholder="12-digit UTR (e.g. 429182910291)" class="flex-1 bg-slate-950 border border-slate-700 rounded-lg px-3 py-2 text-xs text-white" />
+            <button onclick="confirmPayment()" class="bg-blue-600 hover:bg-blue-500 text-white text-xs font-bold px-4 py-2 rounded-lg">Confirm</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-900 py-6 text-center text-xs text-slate-600">
+    <p>Scriza Private Limited • www.scriza.in • Autonomous Revenue Systems Architecture</p>
+  </footer>
+
+  <script>
+    let currentOrderId = "{{ proposal.order_id }}";
+    const auditToken = "{{ audit_token }}";
+
+    async function openCheckoutModal(tier, amount, title) {
+      document.getElementById('modalPackageTitle').innerText = title;
+      document.getElementById('modalAmount').innerText = '₹' + amount.toLocaleString('en-IN');
+      
+      try {
+        const res = await fetch('/api/order/create', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ audit_token: auditToken, package_tier: tier })
+        });
+        const order = await res.json();
+        currentOrderId = order.order_id;
+        document.getElementById('modalOrderRef').innerText = order.order_id;
+        document.getElementById('modalQrImg').src = order.upi_qr_base64;
+        document.getElementById('modalDeepLink').href = order.upi_uri;
+      } catch (e) {
+        console.error(e);
+      }
+
+      document.getElementById('checkoutModal').classList.remove('hidden');
+    }
+
+    function closeCheckoutModal() {
+      document.getElementById('checkoutModal').classList.add('hidden');
+    }
+
+    async function confirmPayment() {
+      const utr = document.getElementById('utrInput').value.trim();
+      if (!utr) {
+        alert('Please enter your payment reference number / UTR.');
+        return;
+      }
+      try {
+        const res = await fetch('/api/order/verify', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ order_id: currentOrderId, payment_ref: utr })
+        });
+        const result = await res.json();
+        if (result.success) {
+          alert('Payment Recorded Successfully! Reference: ' + utr + '. Your sprint slot is locked.');
+          closeCheckoutModal();
+          location.reload();
+        } else {
+          alert('Could not verify: ' + result.message);
+        }
+      } catch (err) {
+        alert('Verification error: ' + err.message);
+      }
+    }
+  </script>
+</body>
+</html>
