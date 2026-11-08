@@ -33,6 +33,7 @@
 - Fintech integration & development: https://www.scrizaone.com/services/fintech
 - AI agents & automation: https://www.scrizaone.com/services/ai-automation
 - Custom software & SaaS: https://www.scrizaone.com/services/custom-software
+- Free AI Search Readiness Check (checks whether search and AI-search crawlers can read and understand a page; no signup, nothing stored): https://www.scrizaone.com/tools/ai-search-readiness
 - Working with Scriza from anywhere: https://www.scrizaone.com/working-with-us
 - Contact: https://www.scrizaone.com/contact
 
