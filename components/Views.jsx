@@ -5,6 +5,7 @@ import { locales } from "@/lib/locales";
 import { serviceContent } from "@/lib/service-content";
 import HeroArtwork from "./HeroArtwork";
 import { guides } from "@/lib/guides";
+import { caseStudies } from "@/lib/case-studies";
 import { SITE_URL } from "@/lib/site";
 
 const p = (locale, sub = "") => `${locales[locale].path}${sub}` || "/";
@@ -120,6 +121,7 @@ export function HomeView({ locale }) {
             <div className="card flat">
               <h3>Products we run ourselves</h3>
               <p>ScrizaPay (bill payments), HRVico (HRMS) and Hostelo. These serve the Indian market today and show how we operate software long-term.</p>
+              <Link href="/case-studies" className="more">Browse the case studies →</Link>
             </div>
           </div>
         </div>
@@ -166,6 +168,11 @@ export function ServiceView({ locale, slug }) {
           <h2>{s.proof.h}</h2>
           <p>{s.proof.p}</p>
           <a className="more" href={s.proof.link.href} rel="noopener">{s.proof.link.label} →</a>
+          <ul>
+            {caseStudies.filter((study) => study.services.includes(slug)).map((study) => (
+              <li key={study.slug}><Link href={`/case-studies/${study.slug}`}>{study.title} case study</Link></li>
+            ))}
+          </ul>
         </div>
       </section>
 

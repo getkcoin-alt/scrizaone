@@ -26,6 +26,7 @@ export default function Shell({ locale = "global", children }) {
                 <li key={s.slug}><Link href={href(locale, `/services/${s.slug}`)}>{s.nav}</Link></li>
               ))}
               <li><Link href="/demos">Demos</Link></li><li><Link href="/resources">Resources</Link></li>
+              <li><Link href="/case-studies">Case studies</Link></li>
               <li><Link href="/working-with-us">Working with us</Link></li>
               <li><Link href="/contact" className="btn btn-sm">Contact</Link></li>
             </ul>
@@ -35,6 +36,7 @@ export default function Shell({ locale = "global", children }) {
             <nav aria-label="Mobile">
               {services.map((s) => <Link key={s.slug} href={href(locale, `/services/${s.slug}`)}>{s.nav}<span aria-hidden="true">↗</span></Link>)}
               <Link href="/demos">Demos<span aria-hidden="true">↗</span></Link><Link href="/tools/payment-readiness">Plan my project<span aria-hidden="true">↗</span></Link><Link href="/tools/ai-search-readiness">AI search check<span aria-hidden="true">↗</span></Link><Link href="/resources">Resources<span aria-hidden="true">↗</span></Link>
+              <Link href="/case-studies">Case studies<span aria-hidden="true">↗</span></Link>
               <Link href="/research">Market research<span aria-hidden="true">↗</span></Link>
               <Link href="/working-with-us">Working with us<span aria-hidden="true">↗</span></Link>
               <Link href="/contact">Contact<span aria-hidden="true">↗</span></Link>

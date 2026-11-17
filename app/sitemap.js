@@ -1,4 +1,5 @@
 import { publishedArticles } from "@/lib/growth/articles.mjs";
+import { caseStudies, caseStudiesPublishedDate } from "@/lib/case-studies";
 export const dynamic = "force-dynamic";
 import { SITE_URL } from "@/lib/site";
 import { alternatesFor, localeList } from "@/lib/locales";
@@ -34,5 +35,10 @@ export default function sitemap() {
   entries.push({ url: abs("/tools/ai-search-readiness"), lastModified: new Date("2026-11-08T00:00:00Z"), changeFrequency: "monthly", priority: 0.8 });
   for (const path of ["/journal", "/tools/project-economics", "/demos", "/services/organic-growth", "/research", "/resources", "/tools/payment-readiness", "/company", "/privacy", ...guides.map(g => `/resources/${g.slug}`)]) { entries.push({url:abs(path),lastModified:new Date(guideDate),changeFrequency:"monthly",priority:0.7}); }
   for (const a of publishedArticles()) entries.push({url:abs("/journal/"+a.slug),lastModified:new Date(a.publishAt),changeFrequency:"monthly",priority:0.7});
+  const casesDate = new Date(caseStudiesPublishedDate);
+  entries.push({ url: abs("/case-studies"), lastModified: casesDate });
+  for (const study of caseStudies) {
+    entries.push({ url: abs("/case-studies/" + study.slug), lastModified: casesDate });
+  }
   return entries;
 }
