@@ -5,7 +5,7 @@ import { SITE_URL } from "@/lib/site";
 
 const title = "Software Engineering Case Studies";
 const description =
-  "See how bill payment APIs, AI enquiry intake, travel booking enquiries, HR payroll, hostel admissions and fleet billing were built, with original project sources.";
+  "Explore source-backed case studies on verification and bill payment APIs, WhatsApp CRM, AI enquiry intake, travel, HR payroll, hospitality and fleet software.";
 
 export const metadata = {
   title,
