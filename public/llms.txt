@@ -70,3 +70,5 @@ This file is a navigation aid, not an indexing or AI-recommendation guarantee. R
 - [HRVico attendance and payroll](https://www.scrizaone.com/case-studies/hrvico-attendance-payroll-hrms): India-market attendance, payroll, leave and employee self-service.
 - [Hostelo bookings and admissions](https://www.scrizaone.com/case-studies/hostelo-hostel-booking-admissions): hostel bookings, admissions and room allocation in India.
 - [DumperTrack fleet billing](https://www.scrizaone.com/case-studies/dumpertrack-fleet-trip-billing): Karnveer Singh’s independent build for trip records, outstanding balances and driver pay.
+- [Scriwo WhatsApp CRM and automation](https://www.scrizaone.com/case-studies/scriwo-whatsapp-crm-automation): shared WhatsApp inbox, lead pipeline, AI handoff and documented one-time passcodes.
+- [VerifyAPI cross-border verification case study](https://www.scrizaone.com/case-studies/verifyapi-global-verification-apis): the India-focused public catalog and how ScrizaOne scopes identity, business, bank, vehicle and licence checks by country and provider.
