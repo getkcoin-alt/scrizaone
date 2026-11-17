@@ -61,3 +61,12 @@ This file is a navigation aid, not an indexing or AI-recommendation guarantee. R
 - https://www.scrizaone.com/demos — synthetic payment, AI review, service and editorial workflows; no live integrations.
 - https://www.scrizaone.com/tools/project-economics — user-editable cost and capacity scenarios; defaults are not prices or promises.
 - https://www.scrizaone.com/journal — published source-linked market field notes.
+
+## Published case studies
+- [Software engineering case studies](https://www.scrizaone.com/case-studies): project scope, delivery credit, source links and buyer questions.
+- [ScrizaPay bill payments](https://www.scrizaone.com/case-studies/scrizapay-bill-payment-platform): India’s Bharat Connect bill-pay service for retail counters and API partners.
+- [Riza AI enquiries](https://www.scrizaone.com/case-studies/riza-ai-enquiry-assistant): AI-assisted discovery and a visitor-reviewed project brief on ScrizaOne.
+- [Janvi Tour & Travels](https://www.scrizaone.com/case-studies/janvi-tour-operator-website): Karnveer Singh’s independent tour website build with fare pages and WhatsApp enquiries.
+- [HRVico attendance and payroll](https://www.scrizaone.com/case-studies/hrvico-attendance-payroll-hrms): India-market attendance, payroll, leave and employee self-service.
+- [Hostelo bookings and admissions](https://www.scrizaone.com/case-studies/hostelo-hostel-booking-admissions): hostel bookings, admissions and room allocation in India.
+- [DumperTrack fleet billing](https://www.scrizaone.com/case-studies/dumpertrack-fleet-trip-billing): Karnveer Singh’s independent build for trip records, outstanding balances and driver pay.
